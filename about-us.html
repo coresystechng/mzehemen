@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <title>About Us - Mzehemen U Tiv</title>
+    <style>
+        
+        .mission-vision {
+            background-color: var(--white);
+        }
+        
+        .card {
+            transition: transform 0.3s;
+            margin-bottom: 20px;
+            border: none;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .icon-box {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 15px;
+        }
+        
+        .timeline {
+            position: relative;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background-color: var(--primary);
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -3px;
+        }
+        
+        .timeline-container {
+            padding: 10px 40px;
+            position: relative;
+            background-color: inherit;
+            width: 50%;
+        }
+        
+        .timeline-container::after {
+            content: '';
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            right: -13px;
+            background-color: white;
+            border: 4px solid var(--accent);
+            top: 15px;
+            border-radius: 50%;
+            z-index: 1;
+        }
+        
+        .left {
+            left: 0;
+        }
+        
+        .right {
+            left: 50%;
+        }
+        
+        .left::before {
+            content: " ";
+            height: 0;
+            position: absolute;
+            top: 22px;
+            width: 0;
+            z-index: 1;
+            right: 30px;
+            border: medium solid white;
+            border-width: 10px 0 10px 10px;
+            border-color: transparent transparent transparent white;
+        }
+        
+        .right::before {
+            content: " ";
+            height: 0;
+            position: absolute;
+            top: 22px;
+            width: 0;
+            z-index: 1;
+            left: 30px;
+            border: medium solid white;
+            border-width: 10px 10px 10px 0;
+            border-color: transparent white transparent transparent;
+        }
+        
+        .right::after {
+            left: -12px;
+        }
+        
+        .timeline-content {
+            padding: 20px 30px;
+            background-color: white;
+            position: relative;
+            border-radius: 6px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+                <a class="brand-logo" href="#">
+                    <img src="assets/images/main-logo-transparent.png" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-lg-0">
+                        <li class="nav-item nav-hover pe-2">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item nav-hover dropdown pe-2">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Who We Are
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="about-us.html">About Us</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="mission-vision.html">Mission & Vision</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="our-cause.html">Our Cause</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="impact-stories.html">Impact Stories</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item nav-hover dropdown pe-2">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Ways To Help
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Contribute</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Volunteer</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Awareness</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item nav-hover dropdown pe-2">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Meet The Team
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Executive Board</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Our Trustees</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Awards & Honors</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item nav-hover pe-2">
+                            <a class="nav-link" aria-current="page" href="#">Contact Us</a>
+                        </li>
+                        <li class="nav-item nav-hover pe-2 ">
+                            <a class="nav-link" aria-current="page" href="#">Blog</a>
+                        </li>
+                    </ul>
+                    <div class="navbar-nav mb-lg-0">
+                        <li class="nav-item blog-item px-4 rounded-3 bg-primary">
+                            <a class="nav-link text-light blog-link" aria-current="page" href="#">Contribute</a>
+                        </li>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="about-hero-section">
+        <div class="container text-center">
+            <h1 class="display-4 fw-bold text-light">About Mzehemen U Tiv</h1>
+            <p class="lead text-light">Strengthening the Tiv nation through culture, community, and collaboration</p>
+        </div>
+    </section>
+
+    <!-- Main About Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img src="./assets/images/IMG-20250417-WA0001.jpg" alt="Mzehemen U Tiv Community Work" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="text-primary">Our Story</h2>
+                    <p class="lead">Welcome to Mzehemen U Tiv, a dynamic non-profit organization dedicated to transforming the social and economic landscape of Tiv land in Benue State, Nigeria.</p>
+                    <p>Our mission is to strengthen the Tiv nation by supporting our causes, celebrating our culture, and honoring those who positively contribute to society. Founded in 2019 by the visionary Professor Kohol Iornem, we aim to create a thriving and sustainable Tiv community where every individual and group can access the resources and opportunities necessary to reach their full potential.</p>
+                    <p>Mzehemen U Tiv is registered in Nigeria with the Corporate Affairs Commission and in the United Kingdom with Companies House. We are at the forefront of community empowerment, innovation, and cultural preservation, while also recognizing and appreciating Tiv sons and daughters who make meaningful contributions to improve our society.</p>
+                    <a href="#" class="btn btn-primary mt-3">Join Our Movement</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission, Vision, Values -->
+    <!-- TODO: Add Images -->
+    <section class="mission-vision py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="text-primary-custom">Our Mission, Vision & Values</h2>
+                <p class="lead">Guiding principles that drive our organization forward</p>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card h-100 text-center p-4">
+                        <div class="icon-box">
+                            <i class="fas fa-bullseye"></i>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Our Mission</h4>
+                            <p class="card-text">To strengthen the Tiv nation by supporting our causes, celebrating our culture, and honoring those who positively contribute to society.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 text-center p-4">
+                        <div class="icon-box">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Our Vision</h4>
+                            <p class="card-text">A thriving and sustainable Tiv community where every individual and group can access the resources and opportunities necessary to reach their full potential.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 text-center p-4">
+                        <div class="icon-box">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Our Values</h4>
+                            <p class="card-text">Community, Cultural Preservation, Integrity, Innovation, Excellence, Collaboration, and Respect for our heritage and people.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Journey -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="text-primary-custom">Our Journey</h2>
+                <p class="lead">The growth and evolution of Mzehemen U Tiv since 2019</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-container left">
+                    <div class="timeline-content">
+                        <h3>2019</h3>
+                        <p>Founded by Professor Kohol Iornem with a vision to strengthen and uplift the Tiv nation.</p>
+                    </div>
+                </div>
+                <div class="timeline-container right">
+                    <div class="timeline-content">
+                        <h3>2020</h3>
+                        <p>Official registration with the Corporate Affairs Commission in Nigeria and establishment of our first community initiatives.</p>
+                    </div>
+                </div>
+                <div class="timeline-container left">
+                    <div class="timeline-content">
+                        <h3>2021</h3>
+                        <p>Expanded our reach internationally with registration in the United Kingdom with Companies House.</p>
+                    </div>
+                </div>
+                <div class="timeline-container right">
+                    <div class="timeline-content">
+                        <h3>2022</h3>
+                        <p>Launched our flagship cultural preservation program and community development initiatives.</p>
+                    </div>
+                </div>
+                <div class="timeline-container left">
+                    <div class="timeline-content">
+                        <h3>2023</h3>
+                        <p>Established partnerships with key stakeholders to enhance our impact across Tiv land.</p>
+                    </div>
+                </div>
+                <div class="timeline-container right">
+                    <div class="timeline-content">
+                        <h3>2024-Present</h3>
+                        <p>Continuing to grow our programs and impact, with a focus on sustainable development and cultural heritage preservation.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="text-primary-custom">Our Leadership</h2>
+                <p class="lead">Meet the dedicated team behind Mzehemen U Tiv</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100 text-center">
+                        <img src="/api/placeholder/300/300" class="card-img-top" alt="Professor Kohol Iornem">
+                        <div class="card-body">
+                            <h5 class="card-title">Professor Kohol Iornem</h5>
+                            <p class="text-muted">Founder & President</p>
+                            <p class="card-text">Visionary leader with a passion for uplifting the Tiv community through sustainable development initiatives.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100 text-center">
+                        <img src="/api/placeholder/300/300" class="card-img-top" alt="Leadership Member">
+                        <div class="card-body">
+                            <h5 class="card-title">Dr. Akume Terhide</h5>
+                            <p class="text-muted">Executive Director</p>
+                            <p class="card-text">Expert in community development with over 15 years of experience in non-profit management.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100 text-center">
+                        <img src="/api/placeholder/300/300" class="card-img-top" alt="Leadership Member">
+                        <div class="card-body">
+                            <h5 class="card-title">Mrs. Nguvan Adoo</h5>
+                            <p class="text-muted">Director of Programs</p>
+                            <p class="card-text">Dedicated advocate for cultural preservation and community empowerment programs.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="#" class="btn btn-primary-custom">Meet Our Full Team</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="text-primary-custom">Our Impact</h2>
+                <p class="lead">Making a difference in the Tiv community</p>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-6 text-center mb-4">
+                    <div class="display-4 fw-bold text-primary-custom">20+</div>
+                    <p>Community Projects</p>
+                </div>
+                <div class="col-md-3 col-6 text-center mb-4">
+                    <div class="display-4 fw-bold text-primary-custom">5,000+</div>
+                    <p>People Impacted</p>
+                </div>
+                <div class="col-md-3 col-6 text-center mb-4">
+                    <div class="display-4 fw-bold text-primary-custom">15+</div>
+                    <p>Local Partnerships</p>
+                </div>
+                <div class="col-md-3 col-6 text-center mb-4">
+                    <div class="display-4 fw-bold text-primary-custom">50+</div>
+                    <p>Cultural Events</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="container-fluid">
+        <div class="border-top border-3 mt-5 py-5">
+            <div class="container">
+                <div class="row">
+                    <!-- Logo Section -->
+                    <div class="col-md-3 mb-4 mb-md-0 d-flex flex-row">
+                        <div class="logo-container mb-3" style=" width: 30%;">
+                            <img src="./assets/images/main-logo-transparent.png" alt="Save the Children logo" class="img-fluid">
+                        </div>
+                        <div class="" style=" width: 70%;">
+                            <span class="h6">
+                                Supporting initiatives that foster the growth and development of the Tiv nation.
+                            </span> <br>
+                            <span>
+                                Ka u i doo Tiv la se soo ye
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <!-- Links Section -->
+                    <div class="col-md-6">
+                        <div class="row footer-links">
+                            <!-- First column of links -->
+                            <div class="col-6 col-md-6">
+                                <a href="#">Contribute</a>
+                                <a href="#">About Us</a>
+                                <a href="#">Mission & Vision</a>
+                                <a href="#">Annual Report</a>
+                                <a href="#">Supporter Promise</a>
+                            </div>
+                            
+                            <!-- Second column of links -->
+                            <div class="col-6 col-md-6">
+                                <a href="#">Terms & conditions</a>
+                                <a href="#">Privacy</a>
+                                <a href="#">Accessibility</a>
+                                <a href="#">Modern Slavery Statement</a>
+                                <a href="#">Cookie Preferences</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Social Media Icons -->
+                    <div class="col-md-3 mt-4 mt-md-0">
+                        <h5 class="mb-3">FOLLOW US</h5>
+                        <div class="social-icons">
+                            <a href="#"><i class="bi bi-facebook"></i></a>
+                            <a href="#"><i class="bi bi-twitter-x"></i></a>
+                            <a href="#"><i class="bi bi-youtube"></i></a>
+                            <a href="#"><i class="bi bi-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Footer Legal Text -->
+        <div class="footer-bottom container">
+            <div class="row">
+                <div class="col-12">
+                    <p class="text-center text-muted">
+                        Mzehemen U Tiv is registered in Nigeria with the Corporate Affairs Commission and in the United Kingdom with Companies House
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
