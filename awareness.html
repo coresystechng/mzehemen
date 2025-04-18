@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <title>Awareness - Mzehemen U Tiv</title>
+    <style>
+        .awareness-hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./assets/images/hero2.jpg') center/cover no-repeat;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+        }
+        .info-icon {
+            font-size: 3rem;
+            color: var(--bs-primary);
+        }
+        .resource-card {
+            transition: transform 0.3s ease;
+        }
+        .resource-card:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+                <a class="brand-logo" href="#">
+                    <img src="assets/images/main-logo-transparent.png" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-lg-0">
+                        <li class="nav-item nav-hover pe-2">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item nav-hover dropdown pe-2">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Who We Are
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="about-us.html">About Us</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="mission-vision.html">Mission & Vision</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="our-cause.html">Our Cause</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="impact-stories.html">Impact Stories</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item nav-hover dropdown pe-2">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Ways To Help
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="contribute.html">Contribute</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="volunteer.html">Volunteer</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item active" href="awareness.html">Awareness</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item nav-hover dropdown pe-2">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Meet The Team
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Executive Board</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Our Trustees</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Awards & Honors</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item nav-hover pe-2">
+                            <a class="nav-link" aria-current="page" href="#">Contact Us</a>
+                        </li>
+                        <li class="nav-item nav-hover pe-2 ">
+                            <a class="nav-link" aria-current="page" href="#">Blog</a>
+                        </li>
+                    </ul>
+                    <div class="navbar-nav mb-lg-0">
+                        <li class="nav-item blog-item px-4 rounded-3 bg-primary">
+                            <a class="nav-link text-light blog-link" aria-current="page" href="contribute.html">Contribute</a>
+                        </li>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="awareness-hero">
+        <div class="container text-center">
+            <h1 class="display-4 fw-bold text-light">Spread The Word</h1>
+            <p class="lead text-light">Help us raise awareness about Tiv culture, challenges, and opportunities</p>
+        </div>
+    </section>
+
+    <!-- Why Awareness Matters Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="text-primary">Why Awareness Matters</h2>
+                <p class="lead">Education and information sharing are powerful tools for change</p>
+            </div>
+            
+            <div class="row g-4 align-items-center">
+                <div class="col-lg-6">
+                    <h3 class="mb-3">Amplify Our Impact</h3>
+                    <p>By raising awareness about the Tiv community's needs, challenges, and aspirations, you help us:</p>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item bg-transparent">
+                            <i class="bi bi-people-fill text-primary me-2"></i>
+                            Build a stronger support network
+                        </li>
+                        <li class="list-group-item bg-transparent">
+                            <i class="bi bi-megaphone-fill text-primary me-2"></i>
+                            Create meaningful dialogue around important issues
+                        </li>
+                        <li class="list-group-item bg-transparent">
+                            <i class="bi bi-lightbulb-fill text-primary me-2"></i>
+                            Inspire innovative solutions to community challenges
+                        </li>
+                        <li class="list-group-item bg-transparent">
+                            <i class="bi bi-heart-fill text-primary me-2"></i>
+                            Connect people with opportunities to contribute meaningfully
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <div class="p-4 bg-light rounded-circle d-inline-block shadow-sm">
+                        <i class="bi bi-bullseye info-icon"></i>
+                    </div>
+                    <p class="fst-italic mt-3">"When people understand our cause, they become partners in our mission."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Focus Areas Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="text-primary">Our Focus Areas</h2>
+                <p class="lead">Key initiatives where awareness can drive meaningful change</p>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Entrepreneurship -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100 shadow resource-card">
+                        <div class="card-body p-4">
+                            <div class="mb-3 text-primary">
+                                <i class="bi bi-briefcase" style="font-size: 2rem;"></i>
+                            </div>
+                            <h4>Promoting Entrepreneurship</h4>
+                            <p>We aim to provide financial support, training, and mentorship to aspiring Tiv entrepreneurs. This initiative helps foster sustainable businesses and promotes job creation within the community.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Women and Youth -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100 shadow resource-card">
+                        <div class="card-body p-4">
+                            <div class="mb-3 text-primary">
+                                <i class="bi bi-person-fill" style="font-size: 2rem;"></i>
+                            </div>
+                            <h4>Empowering Women & Youth</h4>
+                            <p>We implement targeted programs and initiatives that empower Tiv women and youth, enhancing their active participation in both economic and social development.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Education and Healthcare -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100 shadow resource-card">
+                        <div class="card-body p-4">
+                            <div class="mb-3 text-primary">
+                                <i class="bi bi-book" style="font-size: 2rem;"></i>
+                            </div>
+                            <h4>Education & Healthcare</h4>
+                            <p>Our goal is to collaborate with local stakeholders to improve access to quality education and healthcare services for Tiv communities.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cultural Heritage -->
+                <div class="col-md-6 col-lg-6 mb-4">
+                    <div class="card h-100 shadow resource-card">
+                        <div class="card-body p-4">
+                            <div class="mb-3 text-primary">
+                                <i class="bi bi-music-note-beamed" style="font-size: 2rem;"></i>
+                            </div>
+                            <h4>Preserving Tiv Cultural Heritage</h4>
+                            <p>We support cultural initiatives designed to preserve and promote Tiv traditions, language, and arts, thereby strengthening community identity and pride.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recognition Programs -->
+                <div class="col-md-6 col-lg-6 mb-4">
+                    <div class="card h-100 shadow resource-card">
+                        <div class="card-body p-4">
+                            <div class="mb-3 text-primary">
+                                <i class="bi bi-award" style="font-size: 2rem;"></i>
+                            </div>
+                            <h4>Recognition Programs</h4>
+                            <p>Our honors system acknowledges individuals who have made significant achievements in public life or have dedicated themselves to supporting Tiv causes.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-5 bg-primary text-white">
+        <div class="container text-center">
+            <h2 class="mb-4 text-light">Join Our Community Newsletter</h2>
+            <p class="mb-4 text-light">Stay informed about Tiv community issues, success stories, and ways you can help spread awareness</p>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <form class="d-flex">
+                        <input type="email" class="form-control me-2" placeholder="Your email address">
+                        <button type="submit" class="btn btn-light">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Values Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="text-primary">Our Core Values</h2>
+                <p class="lead">The principles that guide our awareness efforts</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="text-center p-3">
+                        <div class="mb-3">
+                            <i class="bi bi-people-fill text-primary" style="font-size: 2.5rem;"></i>
+                        </div>
+                        <h4>Community-Driven</h4>
+                        <p>We actively engage with Tiv communities to understand their needs and ensure our initiatives align with their priorities.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3">
+                    <div class="text-center p-3">
+                        <div class="mb-3">
+                            <i class="bi bi-lightning-charge-fill text-primary" style="font-size: 2.5rem;"></i>
+                        </div>
+                        <h4>Empowerment</h4>
+                        <p>We foster self-reliance and an entrepreneurial spirit among Tiv individuals, enabling them to become catalysts for change.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3">
+                    <div class="text-center p-3">
+                        <div class="mb-3">
+                            <i class="bi bi-tree-fill text-primary" style="font-size: 2.5rem;"></i>
+                        </div>
+                        <h4>Sustainability</h4>
+                        <p>We implement sustainable solutions that create long-lasting impact and contribute to the long-term prosperity of Tiv communities.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3">
+                    <div class="text-center p-3">
+                        <div class="mb-3">
+                            <i class="bi bi-globe text-primary" style="font-size: 2.5rem;"></i>
+                        </div>
+                        <h4>Cultural Sensitivity</h4>
+                        <p>We respect and promote Tiv cultural values and traditions, ensuring our efforts align with the community's ethos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="container-fluid">
+        <div class="border-top border-3 mt-5 py-5">
+            <div class="container">
+                <div class="row">
+                    <!-- Logo Section -->
+                    <div class="col-md-3 mb-4 mb-md-0 d-flex flex-row">
+                        <div class="logo-container mb-3" style=" width: 30%;">
+                            <img src="./assets/images/main-logo-transparent.png" alt="Mzehemen U Tiv logo" class="img-fluid">
+                        </div>
+                        <div class="" style=" width: 70%;">
+                            <span class="h6">
+                                Supporting initiatives that foster the growth and development of the Tiv nation.
+                            </span> <br>
+                            <span>
+                                Ka u i doo Tiv la se soo ye
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <!-- Links Section -->
+                    <div class="col-md-6">
+                        <div class="row footer-links">
+                            <!-- First column of links -->
+                            <div class="col-6 col-md-6">
+                                <a href="contribute.html">Contribute</a>
+                                <a href="about-us.html">About Us</a>
+                                <a href="mission-vision.html">Mission & Vision</a>
+                                <a href="#">Annual Report</a>
+                                <a href="#">Supporter Promise</a>
+                            </div>
+                            
+                            <!-- Second column of links -->
+                            <div class="col-6 col-md-6">
+                                <a href="#">Terms & conditions</a>
+                                <a href="#">Privacy</a>
+                                <a href="#">Accessibility</a>
+                                <a href="#">Modern Slavery Statement</a>
+                                <a href="#">Cookie Preferences</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Social Media Icons -->
+                    <div class="col-md-3 mt-4 mt-md-0">
+                        <h5 class="mb-3">FOLLOW US</h5>
+                        <div class="social-icons">
+                            <a href="#"><i class="bi bi-facebook"></i></a>
+                            <a href="#"><i class="bi bi-twitter-x"></i></a>
+                            <a href="#"><i class="bi bi-youtube"></i></a>
+                            <a href="#"><i class="bi bi-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Footer Legal Text -->
+        <div class="footer-bottom container">
+            <div class="row">
+                <div class="col-12">
+                    <p class="text-center text-muted">
+                        Mzehemen U Tiv is registered in Nigeria with the Corporate Affairs Commission and in the United Kingdom with Companies House
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.1/font/bootstrap-icons.min.css">
+    <script src="./assets/js/bootstrap.bundle.js"></script>
+</body>
+</html>
