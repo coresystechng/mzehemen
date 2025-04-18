@@ -47,10 +47,6 @@ p, span, a, li, td {
     transition: ease-in-out 0.2s;   
 }
 
-.bg-section{
-    background-color: var(--gray-dull);
-}
-
 .text-primary{
     color: var(--primary) !important;
 }
@@ -86,7 +82,7 @@ body {
     font-size: 25px;
 }
 .nav-hover a:hover{
-    color: var(--primary) !important;
+    /* color: var(--primary) !important; */
     transition: ease-in-out 0.2s;
 }
 .nav-hover a:focus{
@@ -116,13 +112,122 @@ body {
 }
 
 /* About us */
-
+.active{
+    background-color: var(--primary) !important;
+}
+.active:hover{
+    color: var(--white) !important;
+}
         
 .about-hero-section {
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/hero2.jpg') center/cover no-repeat;
     height: 60vh;
     display: flex;
     align-items: center;
+}
+
+.mission-vision {
+    background-color: var(--white);
+}
+
+.card {
+    transition: transform 0.3s;
+    margin-bottom: 20px;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.icon-box {
+    font-size: 2.5rem;
+    color: var(--primary);
+    margin-bottom: 15px;
+}
+
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: var(--primary);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+.timeline-container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+.timeline-container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -13px;
+    background-color: white;
+    border: 4px solid var(--accent);
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    left: 50%;
+}
+
+.left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+}
+
+.right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+}
+
+.right::after {
+    left: -12px;
+}
+
+.timeline-content {
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 /* footer */
