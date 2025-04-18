@@ -6,23 +6,26 @@
     <link rel="stylesheet" href="./assets/css/bootstrap.css">
     <link rel="stylesheet" href="./assets/css/styles.css">
     <link rel="icon" href="./assets/images/main-logo.jpg" type="image/x-icon">
-    <title>Awareness - Mzehemen U Tiv</title>
+    <title>Executive Board - Mzehemen U Tiv</title>
     <style>
-        .awareness-hero {
-            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./assets/images/hero2.jpg') center/cover no-repeat;
+        .executive-hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./assets/images/hero4.jpg') center/cover no-repeat;
             height: 60vh;
             display: flex;
             align-items: center;
         }
-        .info-icon {
-            font-size: 3rem;
-            color: var(--bs-primary);
-        }
-        .resource-card {
+        .team-member {
             transition: transform 0.3s ease;
         }
-        .resource-card:hover {
+        .team-member:hover {
             transform: translateY(-5px);
+        }
+        .member-img {
+            height: 180px;
+            width: 180px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 5px solid var(--bs-primary);
         }
     </style>
 </head>
@@ -66,7 +69,7 @@
                                 <li><hr class="dropdown-divider"></li>
                                 <li><a class="dropdown-item" href="volunteer.html">Volunteer</a></li>
                                 <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item active" href="awareness.html">Awareness</a></li>
+                                <li><a class="dropdown-item" href="awareness.html">Awareness</a></li>
                             </ul>
                         </li>
                         <li class="nav-item nav-hover dropdown pe-2">
@@ -74,7 +77,7 @@
                             Meet The Team
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="executive-board.html">Executive Board</a></li>
+                                <li><a class="dropdown-item active" href="executive-board.html">Executive Board</a></li>
                                 <li><hr class="dropdown-divider"></li>
                                 <li><a class="dropdown-item" href="trustees.html">Our Trustees</a></li>
                                 <li><hr class="dropdown-divider"></li>
@@ -99,124 +102,148 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="awareness-hero">
+    <section class="executive-hero">
         <div class="container text-center">
-            <h1 class="display-4 fw-bold text-light">Spread The Word</h1>
-            <p class="lead text-light">Help us raise awareness about Tiv culture, challenges, and opportunities</p>
+            <h1 class="display-4 fw-bold text-light">Executive Board</h1>
+            <p class="lead text-light">Meet the leadership team guiding our mission and vision</p>
         </div>
     </section>
 
-    <!-- Why Awareness Matters Section -->
+    <!-- Executive Board Section -->
     <section class="py-5">
         <div class="container">
             <div class="text-center mb-5">
-                <h2 class="text-primary">Why Awareness Matters</h2>
-                <p class="lead">Education and information sharing are powerful tools for change</p>
+                <h2 class="text-primary">Our Leadership</h2>
+                <p class="lead">The team responsible for strategic decisions and organizational oversight</p>
             </div>
             
-            <div class="row g-4 align-items-center">
-                <div class="col-lg-6">
-                    <h3 class="mb-3">Amplify Our Impact</h3>
-                    <p>By raising awareness about the Tiv community's needs, challenges, and aspirations, you help us:</p>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item bg-transparent">
-                            <i class="bi bi-people-fill text-primary me-2"></i>
-                            Build a stronger support network
-                        </li>
-                        <li class="list-group-item bg-transparent">
-                            <i class="bi bi-megaphone-fill text-primary me-2"></i>
-                            Create meaningful dialogue around important issues
-                        </li>
-                        <li class="list-group-item bg-transparent">
-                            <i class="bi bi-lightbulb-fill text-primary me-2"></i>
-                            Inspire innovative solutions to community challenges
-                        </li>
-                        <li class="list-group-item bg-transparent">
-                            <i class="bi bi-heart-fill text-primary me-2"></i>
-                            Connect people with opportunities to contribute meaningfully
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-lg-6 text-center">
-                    <div class="p-4 bg-light rounded-circle d-inline-block shadow-sm">
-                        <i class="bi bi-bullseye info-icon"></i>
+            <div class="row g-4 justify-content-center">
+                <!-- Prof Kohol Iornem -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 border-0 shadow team-member text-center">
+                        <div class="card-body p-4">
+                            <div class="mb-4 d-flex justify-content-center">
+                                <img src="/api/placeholder/180/180" alt="Prof Kohol Iornem" class="member-img">
+                            </div>
+                            <h4>Prof. Kohol Iornem</h4>
+                            <p class="text-primary fw-bold">Chief Executive</p>
+                            <p class="secondary-text">Leading our organization with vision and dedication to advance the Tiv community's development.</p>
+                            <div class="mt-3">
+                                <a href="#" class="text-primary me-2"><i class="bi bi-linkedin"></i></a>
+                                <a href="#" class="text-primary me-2"><i class="bi bi-twitter-x"></i></a>
+                                <a href="#" class="text-primary"><i class="bi bi-envelope-fill"></i></a>
+                            </div>
+                        </div>
                     </div>
-                    <p class="fst-italic mt-3">"When people understand our cause, they become partners in our mission."</p>
+                </div>
+                
+                <!-- MaryJane Malu -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 border-0 shadow team-member text-center">
+                        <div class="card-body p-4">
+                            <div class="mb-4 d-flex justify-content-center">
+                                <img src="/api/placeholder/180/180" alt="MaryJane Malu" class="member-img">
+                            </div>
+                            <h4>MaryJane Malu</h4>
+                            <p class="text-primary fw-bold">Board Member</p>
+                            <p class="secondary-text">Bringing expertise and passion to our programs focused on community empowerment.</p>
+                            <div class="mt-3">
+                                <a href="#" class="text-primary me-2"><i class="bi bi-linkedin"></i></a>
+                                <a href="#" class="text-primary me-2"><i class="bi bi-twitter-x"></i></a>
+                                <a href="#" class="text-primary"><i class="bi bi-envelope-fill"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Julius Tsav -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 border-0 shadow team-member text-center">
+                        <div class="card-body p-4">
+                            <div class="mb-4 d-flex justify-content-center">
+                                <img src="/api/placeholder/180/180" alt="Julius Tsav" class="member-img">
+                            </div>
+                            <h4>Julius Tsav</h4>
+                            <p class="text-primary fw-bold">Board Member</p>
+                            <p class="secondary-text">Contributing strategic insight to drive our initiatives for sustainable growth.</p>
+                            <div class="mt-3">
+                                <a href="#" class="text-primary me-2"><i class="bi bi-linkedin"></i></a>
+                                <a href="#" class="text-primary me-2"><i class="bi bi-twitter-x"></i></a>
+                                <a href="#" class="text-primary"><i class="bi bi-envelope-fill"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Kwaghzan Sophia -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 border-0 shadow team-member text-center">
+                        <div class="card-body p-4">
+                            <div class="mb-4 d-flex justify-content-center">
+                                <img src="/api/placeholder/180/180" alt="Kwaghzan Sophia" class="member-img">
+                            </div>
+                            <h4>Kwaghzan Sophia</h4>
+                            <p class="text-primary fw-bold">Board Member</p>
+                            <p class="secondary-text">Dedicated to promoting cultural preservation and community development initiatives.</p>
+                            <div class="mt-3">
+                                <a href="#" class="text-primary me-2"><i class="bi bi-linkedin"></i></a>
+                                <a href="#" class="text-primary me-2"><i class="bi bi-twitter-x"></i></a>
+                                <a href="#" class="text-primary"><i class="bi bi-envelope-fill"></i></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Focus Areas Section -->
+    <!-- Leadership Statement Section -->
     <section class="py-5 bg-light">
         <div class="container">
-            <div class="text-center mb-5">
-                <h2 class="text-primary">Our Focus Areas</h2>
-                <p class="lead">Key initiatives where awareness can drive meaningful change</p>
-            </div>
-            
-            <div class="row g-4">
-                <!-- Entrepreneurship -->
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="card h-100 shadow resource-card">
-                        <div class="card-body p-4">
-                            <div class="mb-3 text-primary">
-                                <i class="bi bi-briefcase" style="font-size: 2rem;"></i>
-                            </div>
-                            <h4>Promoting Entrepreneurship</h4>
-                            <p>We aim to provide financial support, training, and mentorship to aspiring Tiv entrepreneurs. This initiative helps foster sustainable businesses and promotes job creation within the community.</p>
-                        </div>
-                    </div>
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h2 class="text-primary mb-3">Leadership Commitment</h2>
+                    <p>Our Executive Board brings together diverse expertise and a shared passion for advancing the Tiv community. Together, we are committed to:</p>
+                    <ul class="list-group list-group-flush mb-4">
+                        <li class="list-group-item bg-transparent">
+                            <i class="bi bi-check-circle-fill text-primary me-2"></i>
+                            Strategic guidance that aligns with our mission and values
+                        </li>
+                        <li class="list-group-item bg-transparent">
+                            <i class="bi bi-check-circle-fill text-primary me-2"></i>
+                            Transparent governance and accountable leadership
+                        </li>
+                        <li class="list-group-item bg-transparent">
+                            <i class="bi bi-check-circle-fill text-primary me-2"></i>
+                            Building partnerships that amplify our impact
+                        </li>
+                        <li class="list-group-item bg-transparent">
+                            <i class="bi bi-check-circle-fill text-primary me-2"></i>
+                            Ensuring sustainable growth and community-driven initiatives
+                        </li>
+                    </ul>
+                    <p class="fst-italic">"Our leadership approach is guided by our core values of community empowerment, sustainability, and cultural preservation. We are dedicated to creating lasting positive change for the Tiv community."</p>
                 </div>
-                
-                <!-- Women and Youth -->
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="card h-100 shadow resource-card">
+                <div class="col-lg-6">
+                    <div class="card border-0 shadow">
                         <div class="card-body p-4">
-                            <div class="mb-3 text-primary">
-                                <i class="bi bi-person-fill" style="font-size: 2rem;"></i>
+                            <h4 class="text-primary mb-3">Board Responsibilities</h4>
+                            <div class="mb-4">
+                                <h5><i class="bi bi-compass me-2"></i> Strategic Direction</h5>
+                                <p>Setting the organization's vision and developing strategic plans that advance our mission to support the Tiv community.</p>
                             </div>
-                            <h4>Empowering Women & Youth</h4>
-                            <p>We implement targeted programs and initiatives that empower Tiv women and youth, enhancing their active participation in both economic and social development.</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Education and Healthcare -->
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="card h-100 shadow resource-card">
-                        <div class="card-body p-4">
-                            <div class="mb-3 text-primary">
-                                <i class="bi bi-book" style="font-size: 2rem;"></i>
+                            <div class="mb-4">
+                                <h5><i class="bi bi-graph-up-arrow me-2"></i> Program Oversight</h5>
+                                <p>Monitoring the effectiveness of our initiatives and ensuring they align with community needs and priorities.</p>
                             </div>
-                            <h4>Education & Healthcare</h4>
-                            <p>Our goal is to collaborate with local stakeholders to improve access to quality education and healthcare services for Tiv communities.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Cultural Heritage -->
-                <div class="col-md-6 col-lg-6 mb-4">
-                    <div class="card h-100 shadow resource-card">
-                        <div class="card-body p-4">
-                            <div class="mb-3 text-primary">
-                                <i class="bi bi-music-note-beamed" style="font-size: 2rem;"></i>
+                            <div class="mb-4">
+                                <h5><i class="bi bi-people me-2"></i> Community Engagement</h5>
+                                <p>Building meaningful relationships with stakeholders and ensuring community voices inform our work.</p>
                             </div>
-                            <h4>Preserving Tiv Cultural Heritage</h4>
-                            <p>We support cultural initiatives designed to preserve and promote Tiv traditions, language, and arts, thereby strengthening community identity and pride.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Recognition Programs -->
-                <div class="col-md-6 col-lg-6 mb-4">
-                    <div class="card h-100 shadow resource-card">
-                        <div class="card-body p-4">
-                            <div class="mb-3 text-primary">
-                                <i class="bi bi-award" style="font-size: 2rem;"></i>
+                            <div>
+                                <h5><i class="bi bi-shield-check me-2"></i> Governance</h5>
+                                <p>Maintaining fiscal responsibility and ethical standards in all our operations.</p>
                             </div>
-                            <h4>Recognition Programs</h4>
-                            <p>Our honors system acknowledges individuals who have made significant achievements in public life or have dedicated themselves to supporting Tiv causes.</p>
                         </div>
                     </div>
                 </div>
@@ -224,71 +251,12 @@
         </div>
     </section>
 
-    <!-- CTA Section -->
-    <section class="py-5 bg-primary text-white">
-        <div class="container text-center">
-            <h2 class="mb-4 text-light">Join Our Community Newsletter</h2>
-            <p class="mb-4 text-light">Stay informed about Tiv community issues, success stories, and ways you can help spread awareness</p>
-            <div class="row justify-content-center">
-                <div class="col-md-6">
-                    <form class="d-flex">
-                        <input type="email" class="form-control me-2" placeholder="Your email address">
-                        <button type="submit" class="btn btn-light">Subscribe</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Core Values Section -->
+    <!-- Contact CTA -->
     <section class="py-5">
-        <div class="container">
-            <div class="text-center mb-5">
-                <h2 class="text-primary">Our Core Values</h2>
-                <p class="lead">The principles that guide our awareness efforts</p>
-            </div>
-            
-            <div class="row g-4">
-                <div class="col-md-6 col-lg-3">
-                    <div class="text-center p-3">
-                        <div class="mb-3">
-                            <i class="bi bi-people-fill text-primary" style="font-size: 2.5rem;"></i>
-                        </div>
-                        <h4>Community-Driven</h4>
-                        <p>We actively engage with Tiv communities to understand their needs and ensure our initiatives align with their priorities.</p>
-                    </div>
-                </div>
-                
-                <div class="col-md-6 col-lg-3">
-                    <div class="text-center p-3">
-                        <div class="mb-3">
-                            <i class="bi bi-lightning-charge-fill text-primary" style="font-size: 2.5rem;"></i>
-                        </div>
-                        <h4>Empowerment</h4>
-                        <p>We foster self-reliance and an entrepreneurial spirit among Tiv individuals, enabling them to become catalysts for change.</p>
-                    </div>
-                </div>
-                
-                <div class="col-md-6 col-lg-3">
-                    <div class="text-center p-3">
-                        <div class="mb-3">
-                            <i class="bi bi-tree-fill text-primary" style="font-size: 2.5rem;"></i>
-                        </div>
-                        <h4>Sustainability</h4>
-                        <p>We implement sustainable solutions that create long-lasting impact and contribute to the long-term prosperity of Tiv communities.</p>
-                    </div>
-                </div>
-                
-                <div class="col-md-6 col-lg-3">
-                    <div class="text-center p-3">
-                        <div class="mb-3">
-                            <i class="bi bi-globe text-primary" style="font-size: 2.5rem;"></i>
-                        </div>
-                        <h4>Cultural Sensitivity</h4>
-                        <p>We respect and promote Tiv cultural values and traditions, ensuring our efforts align with the community's ethos.</p>
-                    </div>
-                </div>
-            </div>
+        <div class="container text-center">
+            <h2 class="text-primary mb-4">Connect With Our Leadership</h2>
+            <p class="lead mb-4">Have questions for our Executive Board? We welcome your inquiries and feedback.</p>
+            <a href="contact-us.html" class="btn btn-primary btn-lg">Contact the Board</a>
         </div>
     </section>
 
