@@ -118,9 +118,13 @@ body {
 .active:hover{
     color: var(--white) !important;
 }
+
+.active-link{
+    color: var(--primary) !important;
+}
         
 .about-hero-section {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/hero2.jpg') center/cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/IMG-20250417-WA0016.jpg') center/cover no-repeat;
     height: 60vh;
     display: flex;
     align-items: center;
@@ -145,6 +149,21 @@ body {
     font-size: 2.5rem;
     color: var(--primary);
     margin-bottom: 15px;
+}
+
+/* awards */
+.awards-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/IMG-20250417-WA0012.jpg') center/cover no-repeat;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+}
+.award-card {
+    height: 100%;
+}
+.award-icon {
+    font-size: 3rem;
+    color: var(--bs-primary);
 }
 
 .timeline {
