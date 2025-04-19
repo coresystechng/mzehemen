@@ -249,6 +249,38 @@ body {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
+@media screen and (max-width: 768px) {
+    .timeline::after {
+        left: 31px;
+    }
+    
+    .timeline-container {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+    
+    .timeline-container.right {
+        left: 0;
+    }
+    
+    .timeline-container.left::after, 
+    .timeline-container.right::after {
+        left: 18px;
+    }
+    
+    .timeline-container.left::before,
+    .timeline-container.right::before {
+        left: 60px;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent white transparent transparent;
+    }
+    
+    .timeline-container {
+        margin-bottom: 20px;
+    }
+}
+
 /* footer */
 .logo-container img {
     max-height: 80px;
