@@ -9,8 +9,7 @@
     --gray-dark: #2e2e2b;
     --white-dull: #f0f0f0;
     --gray-dull: #a5a3a3;
-    --font-heading: 'Londrina Solid', cursive;
-    --font-body: 'Londrina Solid', cursive;
+    --font: 'Londrina Solid', cursive;
 }
 
   /* ====== Base Styles ====== */
@@ -19,16 +18,15 @@
     margin: 0;
     padding: 0;
     color: var(--gray-dark);
+    font-family: var(--font);
 }
 
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-heading);
     font-weight: 400; /* Regular */
 }
 
 p, span, a, li, td {
-    font-family: var(--font-body);
     font-weight: 300; /* Light */
 }
 
@@ -111,9 +109,10 @@ body {
     text-align: center;
 }
 
-/* About us */
+/* active */
 .active{
     background-color: var(--primary) !important;
+    border-color: var(--primary) !important;
 }
 .active:hover{
     color: var(--white) !important;
@@ -247,6 +246,31 @@ body {
     position: relative;
     border-radius: 6px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* input fields */
+
+input {
+    border: 2px solid #ccc;
+    padding: 5px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    border-color: var(--primary) !important;
+    box-shadow: 0 0 5px var(--primary) !important;
+}
+
+/* accordion */
+.accordion-button:not(.collapsed) {
+    box-shadow: none !important;
+    background-color: var(--primary);
+    border-bottom: 2px solid rgb(75, 72, 72);
+    color: white;
+}
+.accordion-button:is(.collapsed) {
+    box-shadow: none !important;
 }
 
 @media screen and (max-width: 768px) {
