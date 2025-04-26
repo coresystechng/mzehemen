@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="icon" href="./assets/images/main-logo.jpg" type="image/x-icon">
+    <title>Blog - Mzehemen U Tiv</title>
+    <style>
+        .blog-hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./assets/images/hero2.jpg') center/cover no-repeat;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+        }
+        .blog-card {
+            transition: transform 0.3s ease;
+            height: 100%;
+        }
+        .blog-card:hover {
+            transform: translateY(-5px);
+        }
+        .blog-img {
+            height: 200px;
+            width: 100%;
+            object-fit: cover;
+        }
+        .blog-category {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: var(--primary);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+        }
+        .blog-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+        }
+        .featured-post {
+            border-left: 4px solid var(--primary);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+                <a class="brand-logo" href="#">
+                    <img src="assets/images/main-logo-transparent.png" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-lg-0">
+                        <li class="nav-item nav-hover pe-2">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item nav-hover dropdown pe-2">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            About Us
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="about-us.html#who-we-are">Who We Are</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="about-us.html#mission-vision">Mission & Vision</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="about-us.html#our-cause">Our Cause</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="about-us.html#impact-stories">Impact Stories</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item nav-hover dropdown pe-2">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Ways To Help
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="contribute.html">Contribute</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="volunteer.html">Volunteer</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="awareness.html">Awareness</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item nav-hover dropdown pe-2">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Meet The Team
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="executive-board.html">Executive Board</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="team.html">Our Team</a></li>
+                                <li><a class="dropdown-item" href="trustees.html">Awards & Honors</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item nav-hover pe-2">
+                            <a class="nav-link" aria-current="page" href="awards.html">Awards & Honors</a>
+                        </li>
+                        <li class="nav-item nav-hover pe-2">
+                            <a class="nav-link" aria-current="page" href="contact-us.html">Contact Us</a>
+                        </li>
+                        <li class="nav-item nav-hover pe-2 ">
+                            <a class="nav-link active-link" aria-current="page" href="blog.html">Blog</a>
+                        </li>
+                    </ul>
+                    <div class="navbar-nav mb-lg-0">
+                        <li class="nav-item blog-item px-4 rounded-3 bg-primary">
+                            <a class="nav-link text-light blog-link" aria-current="page" href="contribute.html">Contribute</a>
+                        </li>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="blog-hero">
+        <div class="container text-center">
+            <h1 class="display-4 fw-bold text-light">Our Blog</h1>
+            <p class="lead text-light">News, updates, and stories from the Tiv community</p>
+        </div>
+    </section>
+
+    <!-- Featured Post Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <div class="card border-0 shadow featured-post">
+                        <div class="row g-0">
+                            <div class="col-md-5">
+                                <img src="./assets/images/IMG-20250417-WA0017.jpg" class="img-fluid h-100 w-100 object-fit-cover rounded-start" alt="Featured post image">
+                            </div>
+                            <div class="col-md-7">
+                                <div class="card-body p-4">
+                                    <span class="badge bg-primary mb-2">Featured</span>
+                                    <h2 class="card-title">Tiv Cultural Festival 2025: Celebrating Our Heritage</h2>
+                                    <p class="blog-meta mb-3">April 15, 2025 • By Admin</p>
+                                    <p class="card-text">The annual Tiv Cultural Festival is set to take place next month, bringing together communities from across Nigeria and the diaspora. This year's event promises to be the largest celebration of Tiv culture yet, featuring traditional dances, music, food, and crafts.</p>
+                                    <p class="card-text">The festival aims to preserve and promote Tiv cultural heritage while fostering unity and pride among the younger generation...</p>
+                                    <a href="#" class="btn btn-primary">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Posts Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-md-8">
+                    <h2 class="text-primary">Latest Articles</h2>
+                </div>
+                <div class="col-md-4">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search blog...">
+                        <button class="btn btn-primary" type="button">
+                            <i class="bi bi-search text-light"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Blog Post 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 shadow blog-card">
+                        <div class="">
+                            <div class="row">
+                                <div class="col-4">
+
+                                </div>
+                                <div class="col-4">
+                                    <i class="bi bi-journal-text" style="font-size: 100px;"></i>
+                                </div>
+                                <div class="col-4">
+                                    <span class="blog-category">Community</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body p-4">
+                            <h4 class="card-title">New Community Center Opens in Gboko</h4>
+                            <p class="blog-meta mb-3">April 10, 2025 • By Admin</p>
+                            <p class="card-text">Mzehemen U Tiv is proud to announce the opening of a new community center in Gboko, designed to serve as a hub for educational programs and cultural activities...</p>
+                            <a href="#" class="btn btn-primary btn-lg px-4">Continue Reading</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Blog Post 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 shadow blog-card">
+                        <div class="position-relative">
+                            <div class="row">
+                                <div class="col-4">
+
+                                </div>
+                                <div class="col-4">
+                                    <i class="bi bi-journal-text" style="font-size: 100px;"></i>
+                                </div>
+
+                                <div class="col-4">
+                                    <span class="blog-category">Education</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body p-4">
+                            <h4 class="card-title">Scholarship Program Supports 50 Tiv Students</h4>
+                            <p class="blog-meta mb-3">April 5, 2025 • By Admin</p>
+                            <p class="card-text">Our annual scholarship program has successfully awarded educational support to 50 talented Tiv students, enabling them to pursue higher education in various fields...</p>
+                            <a href="#" class="btn btn-primary btn-lg px-4">Continue Reading</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Blog Post 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 shadow blog-card">
+                        <div class="">
+                            <div class="row">
+                                <div class="col-4">
+
+                                </div>
+                                <div class="col-4">
+                                    <i class="bi bi-journal-text" style="font-size: 100px;"></i>
+                                </div>
+                                <div class="col-4">
+                                    <span class="blog-category">Healthcare</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body p-4">
+                            <h4 class="card-title">Medical Outreach Program Reaches Rural Villages</h4>
+                            <p class="blog-meta mb-3">March 28, 2025 • By Admin</p>
+                            <p class="card-text">Our healthcare initiative has successfully delivered medical services to ten remote villages in Benue State, providing essential care to over 2,000 individuals...</p>
+                            <a href="#" class="btn btn-primary btn-lg px-4">Continue Reading</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Blog Post 4 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 shadow blog-card">
+                        <div class="">
+                            <div class="row">
+                                <div class="col-4">
+
+                                </div>
+                                <div class="col-4">
+                                    <i class="bi bi-journal-text" style="font-size: 100px;"></i>
+                                </div>
+                                <div class="col-4">
+                                    <span class="blog-category">Culture</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body p-4">
+                            <h4 class="card-title">Preserving Tiv Language: New Initiative Launched</h4>
+                            <p class="blog-meta mb-3">March 22, 2025 • By Admin</p>
+                            <p class="card-text">We're excited to announce a new program aimed at preserving and promoting the Tiv language among younger generations, featuring digital resources and workshops...</p>
+                            <a href="#" class="btn btn-primary btn-lg px-4">Continue Reading</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Blog Post 5 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 shadow blog-card">
+                        <div class="">
+                            <div class="row">
+                                <div class="col-4">
+
+                                </div>
+                                <div class="col-4">
+                                    <i class="bi bi-journal-text" style="font-size: 100px;"></i>
+                                </div>
+                                <div class="col-4">
+                                    <span class="blog-category">Events</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body p-4">
+                            <h4 class="card-title">Annual Fundraising Gala Raises Record Amount</h4>
+                            <p class="blog-meta mb-3">March 15, 2025 • By Admin</p>
+                            <p class="card-text">This year's fundraising gala in London exceeded all expectations, raising over £100,000 to support our educational programs and community development initiatives...</p>
+                            <a href="#" class="btn btn-primary btn-lg px-4">Continue Reading</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Blog Post 6 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 shadow blog-card">
+                        <div class="">
+                            <div class="row">
+                                <div class="col-4">
+
+                                </div>
+                                <div class="col-4">
+                                    <i class="bi bi-journal-text" style="font-size: 100px;"></i>
+                                </div>
+                                <div class="col-4">
+                                    <span class="blog-category">Agriculture</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body p-4">
+                            <h4 class="card-title">Sustainable Farming Training for Tiv Farmers</h4>
+                            <p class="blog-meta mb-3">March 8, 2025 • By Admin</p>
+                            <p class="card-text">Our agricultural education program has trained 200 Tiv farmers in sustainable farming techniques, helping improve crop yields while protecting the environment...</p>
+                            <a href="#" class="btn btn-primary btn-lg px-4">Continue Reading</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Pagination -->
+            <div class="row mt-5">
+                <div class="col-12">
+                    <nav aria-label="Blog pagination">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item disabled">
+                                <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                            </li>
+                            <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link text-primary" href="#">2</a></li>
+                            <li class="page-item">
+                                <a class="page-link text-primary" href="#">Next</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories & Newsletter Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Newsletter -->
+                <div class="col-md-12">
+                    <div class="card border-0 shadow">
+                        <div class="card-body p-4">
+                            <h3 class="text-primary mb-4">Subscribe to Our Newsletter</h3>
+                            <p>Stay updated with our latest news, events, and initiatives by subscribing to our monthly newsletter.</p>
+                            
+                            <form class="mt-4">
+                                <div class="mb-3">
+                                    <label for="newsletterName" class="form-label">Your Name</label>
+                                    <input type="text" class="form-control" id="newsletterName" placeholder="Enter your name">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="newsletterEmail" class="form-label">Email Address</label>
+                                    <input type="email" class="form-control" id="newsletterEmail" placeholder="Enter your email">
+                                </div>
+                                <div class="d-grid">
+                                    <button type="submit" class="btn btn-primary">Subscribe Now</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="container-fluid">
+        <div class="border-top border-3 mt-5 py-5">
+            <div class="container">
+                <div class="row">
+                    <!-- Logo Section -->
+                    <div class="col-md-3 mb-4 mb-md-0 d-flex flex-column">
+                        <div class="logo-container d-flex flex-row align-items-center" style="">
+                            <img src="./assets/images/main-logo-transparent.png" alt="Save the Children logo" class="img-fluid" width="80px">
+                            <h4 class="text-primary">Mzehemen U Tiv</h4>
+                        </div>
+                        <div class=" text-center" style=" width: 70%;">
+                            <span class="h6">
+                                Supporting initiatives that foster the growth and development of the Tiv nation.
+                            </span> <br>
+                            <span>
+                                "Ka u i doo Tiv la se soo ye"
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <!-- Links Section -->
+                    <div class="col-md-6">
+                        <div class="row footer-links">
+                            <!-- First column of links -->
+                            <div class="col-6 col-md-6">
+                                <a href="about-us.html">About Us</a>
+                                <a href="mission-vision.html">Mission & Vision</a>
+                                <a href="contribute.html">Contribute</a>
+                                <a href="volunteer.html">Volunteer</a>
+                                <a href="impact-stories.html">Impact Stories</a>
+                            </div>
+                            
+                            <!-- Second column of links -->
+                            <div class="col-6 col-md-6">
+                                <a href="awards.html">Awards & Honors</a>
+                                <a href="contact-us.html">Contact Us</a>
+                                <a href="#">Terms of Use</a>
+                                <a href="#">Privacy Policy</a>
+                                <a href="#">Modern Slavery Statement</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Social Media Icons -->
+                    <div class="col-md-3 mt-4 mt-md-0">
+                        <h5 class="mb-3">FOLLOW US</h5>
+                        <div class="social-icons">
+                            <a href="https://web.facebook.com/people/Mzehemen-u-Tiv/61558419569681/" target="_blank"><i class="bi bi-facebook text-primary"></i></a>
+                            <a href="https://x.com/mzehemen_u_tiv" target="_blank"><i class="bi bi-twitter-x text-primary"></i></a>
+                            <a href="#"><i class="bi bi-linkedin text-primary"></i></a>
+                            <a href="#"><i class="bi bi-instagram text-primary"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Footer Legal Text -->
+        <div class="footer-bottom container">
+            <div class="row">
+                <div class="col-12">
+                    <p class="text-center text-muted">
+                        Mzehemen U Tiv is registered in Nigeria with the Corporate Affairs Commission and in the United Kingdom with Companies House
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.1/font/bootstrap-icons.min.css">
+    <script src="./assets/js/bootstrap.bundle.js"></script>
+</body>
+</html>

@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="icon" href="./assets/images/main-logo.jpg" type="image/x-icon">
+    <title>Impact Stories - Mzehemen U Tiv</title>
+    <style>
+        .impact-hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./assets/images/IMG-20250417-WA0001.jpg') center/cover no-repeat;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+        }
+        .testimonial-img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 3px solid #fff;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+        }
+        .story-card {
+            transition: transform 0.3s ease;
+            overflow: hidden;
+        }
+        .story-card:hover {
+            transform: translateY(-5px);
+        }
+        .story-img-container {
+            overflow: hidden;
+            max-height: 250px;
+        }
+        .story-img {
+            transition: transform 0.5s ease;
+        }
+        .story-card:hover .story-img {
+            transform: scale(1.05);
+        }
+        .quote-mark {
+            font-size: 4rem;
+            line-height: 1;
+            opacity: 0.2;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+                <a class="brand-logo" href="#">
+                    <img src="assets/images/main-logo-transparent.png" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-lg-0">
+                        <li class="nav-item nav-hover pe-2">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item nav-hover dropdown pe-2">
+                            <a class="nav-link dropdown-toggle active-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Who We Are
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="about-us.html">About Us</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="mission-vision.html">Mission & Vision</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="our-cause.html">Our Cause</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item active" href="impact-stories.html">Impact Stories</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item nav-hover dropdown pe-2">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Ways To Help
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="contribute.html">Contribute</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="volunteer.html">Volunteer</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="awareness.html">Awareness</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item nav-hover dropdown pe-2">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Meet The Team
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="executive-board.html">Executive Board</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="team.html">Our Team</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item nav-hover pe-2">
+                            <a class="nav-link" aria-current="page" href="awards.html">Awards & Honors</a>
+                        </li>
+                        <li class="nav-item nav-hover pe-2">
+                            <a class="nav-link" aria-current="page" href="contact-us.html">Contact Us</a>
+                        </li>
+                        <li class="nav-item nav-hover pe-2 ">
+                            <a class="nav-link" aria-current="page" href="blog.html">Blog</a>
+                        </li>
+                    </ul>
+                    <div class="navbar-nav mb-lg-0">
+                        <li class="nav-item blog-item px-4 rounded-3 bg-primary">
+                            <a class="nav-link text-light blog-link" aria-current="page" href="contribute.html">Contribute</a>
+                        </li>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="impact-hero">
+        <div class="container text-center">
+            <h1 class="display-4 fw-bold text-light">Impact Stories</h1>
+            <p class="lead text-light">Real-life stories and testimonials showing how we've made a difference</p>
+        </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="text-primary mb-4">Transforming Lives in Tiv Communities</h2>
+                    <p class="lead mb-5">Through our initiatives and programs, Mzehemen U Tiv has empowered individuals and communities to overcome challenges and achieve sustainable growth. These stories highlight the real impact of our work and the positive changes we've helped create throughout Tiv land.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Impact Story -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img src="./assets/images/IMG-20250417-WA0009.jpg" alt="Women's Cooperative" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-lg-6">
+                    <h3 class="text-primary mb-3">The Gboko Women's Cooperative</h3>
+                    <p class="lead mb-3">Empowering women entrepreneurs through financial support and training</p>
+                    <p class="mb-4">In 2023, Mzehemen U Tiv launched a community-based initiative to support women entrepreneurs in Gboko. Through our financial assistance program and entrepreneurship training, we helped establish the Gboko Women's Cooperative, which now has over 50 active members running successful small businesses.</p>
+                    <p class="mb-4">The cooperative has not only improved the economic status of these women but has also created employment opportunities for youth in the community. Members of the cooperative have reported an average 60% increase in household income since joining the program.</p>
+                    <a href="#" class="btn btn-primary btn-lg px-4">Read Full Story</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Stories Section -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-primary mb-5 text-center">Stories of Change</h2>
+            
+            <div class="row g-4">
+                <!-- Story 1 -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card h-100 shadow border-0 story-card">
+                        <div class="story-img-container mx-auto">
+                            <div class="mb-3 ">
+                                <i class="bi bi-calendar2-event text-primary" style="font-size: 100px;"></i>
+                            </div>
+                        </div>
+                        <div class="card-body p-4 text-center">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="me-3 text-primary">
+                                    <i class="fas fa-laptop-code fa-2x"></i>
+                                </div>
+                                <h4 class="card-title mb-0 text-center mx-auto">Youth Technology Program</h4>
+                            </div>
+                            <p class="card-text secondary-text mb-3">Our digital skills training program has equipped over 200 Tiv youth with modern technology skills, enabling them to access remote work opportunities and start tech-enabled businesses.</p>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-primary btn-lg px-4 text-center">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Story 2 -->
+                <div class="col-md-6 col-lg-4 mb-4 text-center">
+                    <div class="card h-100 shadow border-0 story-card">
+                        <div class="story-img-container mx-auto">
+                            <div class="mb-3 ">
+                                <i class="bi bi-calendar2-event text-primary" style="font-size: 100px;"></i>
+                            </div>
+                        </div>
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="me-3 text-primary">
+                                    <i class="fas fa-drum fa-2x"></i>
+                                </div>
+                                <h4 class="card-title mb-0 mx-auto">Cultural Heritage Festival</h4>
+                            </div>
+                            <p class="card-text secondary-text mb-3">The annual Tiv Cultural Heritage Festival launched by Mzehemen U Tiv has revitalized traditional arts, music, and dance, creating cultural pride among younger generations.</p>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-primary btn-lg px-4 text-center">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Story 3 -->
+                <div class="col-md-6 col-lg-4 mb-4 text-center">
+                    <div class="card h-100 shadow border-0 story-card">
+                        <div class="story-img-container mx-auto">
+                            <div class="mb-3 ">
+                                <i class="bi bi-calendar2-event text-primary" style="font-size: 100px;"></i>
+                            </div>
+                        </div>
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="me-3 text-primary">
+                                    <i class="fas fa-graduation-cap fa-2x"></i>
+                                </div>
+                                <h4 class="card-title mb-0 mx-auto">Educational Scholarships</h4>
+                            </div>
+                            <p class="card-text secondary-text mb-3">Our scholarship program has provided financial support to 50 talented students from underprivileged families, allowing them to pursue higher education and achieve their career goals.</p>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-primary btn-lg px-4 text-center">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Story 4 -->
+                <div class="col-md-6 col-lg-4 mb-4 text-center">
+                    <div class="card h-100 shadow border-0 story-card">
+                        <div class="story-img-container mx-auto">
+                            <div class="mb-3 ">
+                                <i class="bi bi-calendar2-event text-primary" style="font-size: 100px;"></i>
+                            </div>
+                        </div>
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="me-3 text-primary">
+                                    <i class="fas fa-heartbeat fa-2x"></i>
+                                </div>
+                                <h4 class="card-title mb-0 mx-auto">Healthcare Outreach</h4>
+                            </div>
+                            <p class="card-text secondary-text mb-3">Through partnerships with healthcare providers, we've organized medical outreach programs that have provided essential healthcare services to over 1,000 individuals in rural Tiv communities.</p>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-primary btn-lg px-4 text-center">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Story 5 -->
+                <div class="col-md-6 col-lg-4 mb-4 text-center">
+                    <div class="card h-100 shadow border-0 story-card">
+                        <div class="story-img-container mx-auto">
+                            <div class="mb-3 ">
+                                <i class="bi bi-calendar2-event text-primary" style="font-size: 100px;"></i>
+                            </div>
+                        </div>
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="me-3 text-primary">
+                                    <i class="fas fa-seedling fa-2x"></i>
+                                </div>
+                                <h4 class="card-title mb-0 mx-auto">Agricultural Innovation</h4>
+                            </div>
+                            <p class="card-text secondary-text mb-3">Our agricultural support initiative has introduced modern farming techniques and equipment to 25 farming communities, resulting in improved crop yields and economic stability.</p>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-primary btn-lg px-4 text-center">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Story 6 -->
+                <div class="col-md-6 col-lg-4 mb-4 text-center">
+                    <div class="card h-100 shadow border-0 story-card">
+                        <div class="story-img-container mx-auto">
+                            <div class="mb-3 ">
+                                <i class="bi bi-calendar2-event text-primary" style="font-size: 100px;"></i>
+                            </div>
+                        </div>
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="me-3 text-primary">
+                                    <i class="fas fa-users fa-2x"></i>
+                                </div>
+                                <h4 class="card-title mb-0 mx-auto">Young Leaders Program</h4>
+                            </div>
+                            <p class="card-text secondary-text mb-3">Our leadership development program has trained 75 young Tiv leaders who are now driving positive change in their communities through various social impact initiatives.</p>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-primary btn-lg px-4 text-center">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-5 bg-dark text-white">
+        <div class="container">
+            <h2 class="text-light mb-5 text-center">Voices of Impact</h2>
+            
+            <div class="row g-4">
+                <!-- Testimonial 1 -->
+                <div class="col-md-6 mb-4">
+                    <div class="card bg-transparent border-0">
+                        <div class="card-body">
+                            <div class="d-flex mb-4">
+                                <div class="">
+                                    <i class="bi bi-person-circle text-white me-3" style="font-size: 40px;"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-white mb-1">Grace Tersoo</h4>
+                                    <p class="text-light mb-0">Entrepreneur, Gboko Women's Cooperative</p>
+                                </div>
+                            </div>
+                            <div class="position-relative">
+                                <span class="quote-mark position-absolute start-0 top-0">"</span>
+                                <p class="text-light ps-4 pt-2">The training and financial support from Mzehemen U Tiv changed my life. I now run a successful tailoring business that supports my family and employs three other women from my community. The skills I gained have given me confidence and financial independence.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="col-md-6 mb-4">
+                    <div class="card bg-transparent border-0">
+                        <div class="card-body">
+                            <div class="d-flex mb-4">
+                                <div class="">
+                                    <i class="bi bi-person-circle text-white me-3" style="font-size: 40px;"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-white mb-1">David Ityavyar</h4>
+                                    <p class="text-light mb-0">Scholarship Recipient, University of Ibadan</p>
+                                </div>
+                            </div>
+                            <div class="position-relative">
+                                <span class="quote-mark position-absolute start-0 top-0">"</span>
+                                <p class="text-light ps-4 pt-2">The scholarship I received from Mzehemen U Tiv made my dream of higher education possible. Coming from a rural farming community, I never imagined I could attend university. Now I'm studying agricultural science and plan to bring modern farming techniques back to my community.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="col-md-6 mb-4">
+                    <div class="card bg-transparent border-0">
+                        <div class="card-body">
+                            <div class="d-flex mb-4">
+                                <div class="">
+                                    <i class="bi bi-person-circle text-white me-3" style="font-size: 40px;"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-white mb-1">Joseph Akperan</h4>
+                                    <p class="text-light mb-0">Youth Technology Program Graduate</p>
+                                </div>
+                            </div>
+                            <div class="position-relative">
+                                <span class="quote-mark position-absolute start-0 top-0">"</span>
+                                <p class="text-light ps-4 pt-2">The digital skills training from Mzehemen U Tiv opened doors I never knew existed. I now work remotely as a web developer for companies around the world while still living in my hometown. I've also started teaching basic computer skills to other youth in my community.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 4 -->
+                <div class="col-md-6 mb-4">
+                    <div class="card bg-transparent border-0">
+                        <div class="card-body">
+                            <div class="d-flex mb-4">
+                                <div class="">
+                                    <i class="bi bi-person-circle text-white me-3" style="font-size: 40px;"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-white mb-1">Mary Orduen</h4>
+                                    <p class="text-light mb-0">Community Health Worker, Buruku</p>
+                                </div>
+                            </div>
+                            <div class="position-relative">
+                                <span class="quote-mark position-absolute start-0 top-0">"</span>
+                                <p class="text-light ps-4 pt-2">The healthcare outreach program organized by Mzehemen U Tiv has significantly improved access to medical services in our area. Many health issues that were previously neglected are now being addressed, and our community members are more aware of preventive healthcare practices.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img src="./assets/images/IMG-20250417-WA0016.jpg" alt="Make An Impact" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="text-primary mb-4">Help Us Create More Impact Stories</h2>
+                    <p class="lead mb-4">Your support can help us continue making a difference in Tiv communities. Together, we can create more success stories and transform more lives.</p>
+                    
+                    <div class="card mb-4 border-0 shadow-sm">
+                        <div class="card-body">
+                            <div class="d-flex">
+                                <div class="me-3 text-primary">
+                                    <i class="fas fa-hand-holding-heart fa-2x"></i>
+                                </div>
+                                <div>
+                                    <h5 class="card-title">Your Contribution Matters</h5>
+                                    <p class="card-text secondary-text">Every donation, no matter the size, helps us implement programs and initiatives that create lasting change in Tiv communities. Join us in our mission to build a brighter future.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-start mt-4">
+                        <a href="#" class="btn btn-primary btn-lg px-4">Donate Now</a>
+                        <a href="#" class="btn btn-primary btn-lg px-4">Volunteer</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="container-fluid">
+        <div class="border-top border-3 mt-5 py-5">
+            <div class="container">
+                <div class="row">
+                    <!-- Logo Section -->
+                    <div class="col-md-3 mb-4 mb-md-0 d-flex flex-column">
+                        <div class="logo-container d-flex flex-row align-items-center" style="">
+                            <img src="./assets/images/main-logo-transparent.png" alt="Save the Children logo" class="img-fluid" width="80px">
+                            <h4 class="text-primary">Mzehemen U Tiv</h4>
+                        </div>
+                        <div class=" text-center" style=" width: 70%;">
+                            <span class="h6">
+                                Supporting initiatives that foster the growth and development of the Tiv nation.
+                            </span> <br>
+                            <span>
+                                "Ka u i doo Tiv la se soo ye"
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <!-- Links Section -->
+                    <div class="col-md-6">
+                        <div class="row footer-links">
+                            <!-- First column of links -->
+                            <div class="col-6 col-md-6">
+                                <a href="about-us.html">About Us</a>
+                                <a href="mission-vision.html">Mission & Vision</a>
+                                <a href="contribute.html">Contribute</a>
+                                <a href="volunteer.html">Volunteer</a>
+                                <a href="impact-stories.html">Impact Stories</a>
+                            </div>
+                            
+                            <!-- Second column of links -->
+                            <div class="col-6 col-md-6">
+                                <a href="awards.html">Awards & Honors</a>
+                                <a href="contact-us.html">Contact Us</a>
+                                <a href="#">Terms of Use</a>
+                                <a href="#">Privacy Policy</a>
+                                <a href="#">Modern Slavery Statement</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Social Media Icons -->
+                    <div class="col-md-3 mt-4 mt-md-0">
+                        <h5 class="mb-3">FOLLOW US</h5>
+                        <div class="social-icons">
+                            <a href="https://web.facebook.com/people/Mzehemen-u-Tiv/61558419569681/" target="_blank"><i class="bi bi-facebook text-primary"></i></a>
+                            <a href="https://x.com/mzehemen_u_tiv" target="_blank"><i class="bi bi-twitter-x text-primary"></i></a>
+                            <a href="#"><i class="bi bi-linkedin text-primary"></i></a>
+                            <a href="#"><i class="bi bi-instagram text-primary"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Footer Legal Text -->
+        <div class="footer-bottom container">
+            <div class="row">
+                <div class="col-12">
+                    <p class="text-center text-muted">
+                        Mzehemen U Tiv is registered in Nigeria with the Corporate Affairs Commission and in the United Kingdom with Companies House
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.1/font/bootstrap-icons.min.css">
+    <script src="./assets/js/bootstrap.bundle.js"></script>
+</body>
+</html>

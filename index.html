@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="icon" href="./assets/images/main-logo.jpg" type="image/x-icon">
+    <title>Home - Mzehemen U Tiv</title>
+    <style>
+        .who-we-are-body{
+            letter-spacing: 1px;
+        }
+        .swiper-container {
+            width: 100%;
+        }
+        
+        .swiper {
+            width: 100%;
+            height: 900px; 
+        }
+        
+        .swiper-slide {
+            position: relative;
+            text-align: left;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .slide-content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+            padding: 20px;
+            color: white;
+            background: rgb(0, 0, 0, 0); 
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+        }
+        
+        .swiper-slide::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); 
+        }
+        
+        .slide-title {
+            font-size: 3.5rem;
+            /* font-weight: bold; */
+            margin-bottom: 1rem;
+        }
+        
+        .slide-description {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            color: white;
+        }
+        
+        .swiper-button-next, .swiper-button-prev {
+            color: #fff;
+        }
+        
+        .swiper-pagination-bullet {
+            background: #fff;
+            opacity: 0.8;
+        }
+        
+        .swiper-pagination-bullet-active {
+            background: var(--primary);
+        }
+        @media (max-width: 768px) {
+        .swiper {
+            height: 500px; 
+        }
+
+        .slide-content{
+            max-width: 500px;
+            padding: 0 50px;
+        }
+
+        .slide-title {
+            font-size: 2rem; 
+        }
+
+        .slide-description {
+            font-size: 0.9rem; 
+        }
+
+        .slide-content a.btn {
+            font-size: 18px !important; 
+            padding: 0.5rem 1rem; 
+        }
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+                <a class="brand-logo" href="#">
+                    <img src="assets/images/main-logo-transparent.png" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-lg-0">
+                        <li class="nav-item nav-hover pe-2">
+                            <a class="nav-link active-link" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item nav-hover dropdown pe-2">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            About Us
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="about-us.html#who-we-are">Who We Are</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="about-us.html#mission-vision">Mission & Vision</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="about-us.html#our-cause">Our Cause</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="about-us.html#impact-stories">Impact Stories</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item nav-hover dropdown pe-2">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Ways To Help
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="contribute.html">Contribute</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="volunteer.html">Volunteer</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="awareness.html">Awareness</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item nav-hover dropdown pe-2">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Meet The Team
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="executive-board.html">Executive Board</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="team.html">Our Team</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item nav-hover pe-2">
+                            <a class="nav-link" aria-current="page" href="awards.html">Awards & Honors</a>
+                        </li>
+                        <li class="nav-item nav-hover pe-2">
+                            <a class="nav-link" aria-current="page" href="contact-us.html">Contact Us</a>
+                        </li>
+                        <li class="nav-item nav-hover pe-2 ">
+                            <a class="nav-link" aria-current="page" href="blog.html">Blog</a>
+                        </li>
+                    </ul>
+                    <div class="navbar-nav mb-lg-0">
+                        <li class="nav-item blog-item px-4 rounded-3 bg-primary">
+                            <a class="nav-link text-light blog-link" aria-current="page" href="contribute.html">Contribute</a>
+                        </li>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="swiper-container">
+            <div class="swiper mySwiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide" style="background-image: url('./assets/images/IMG-20250417-WA0017.jpg'); background-size: cover; background-position: center;">
+                        <div class="slide-content">
+                            <h1 class="slide-title display-4 display-md-2">Welcome to Mzehemen U Tiv</h1>
+                            <p class="slide-description fs-5 fs-md-4">Ka u i doo Tiv la se soo ye.</p>
+                            <a href="contribute.html" class="btn btn-primary btn-md btn-lg px-3 px-md-4" style="font-size: 20px;">
+                                Donate Now <i class="bi bi-arrow-right text-light ps-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide" style="background-image: url('./assets/images/slider2.jpg'); background-size: cover; background-position: center;">
+                        <div class="slide-content">
+                            <h1 class="slide-title">Empowering Our Community</h1>
+                            <p class="slide-description">Building a vibrant and sustainable Tiv community where everyone can thrive.</p>
+                            <a href="contribute.html" class="btn btn-primary btn-lg px-4" style="font-size: 28px;">
+                                    Donate Now <i class="bi bi-arrow-right text-light ps-1"></i></a>
+                        </div>
+                    </div>
+                    
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide" style="background-image: url('./assets/images/slider3.jpg'); background-size: cover; background-position: center;">
+                        <div class="slide-content">
+                            <h1 class="slide-title">Make A Difference Today</h1>
+                            <p class="slide-description">Your support helps us create lasting impact in Tiv communities.</p>
+                            <a href="contribute.html" class="btn btn-primary btn-lg px-4" style="font-size: 28px;">
+                                    Donate Now <i class="bi bi-arrow-right text-light ps-1"></i></a>
+                        </div>
+                    </div>
+                    
+                    <!-- Slide 4 -->
+                    <div class="swiper-slide" style="background-image: url('./assets/images/slider4.jpg'); background-size: cover; background-position: center;">
+                        <div class="slide-content">
+                            <h1 class="slide-title">Building Our Future</h1>
+                            <p class="slide-description">Your contribution strengthens cultural preservation and empowers the next generation of Tiv leaders.</p>
+                            <a href="contribute.html" class="btn btn-primary btn-lg px-4" style="font-size: 28px;">
+                                    Donate Now <i class="bi bi-arrow-right text-light ps-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Navigation buttons -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                
+                <!-- Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+
+        <section class="">
+            <!-- Overview section -->
+            <div class="container py-5">
+                <div class="row">
+                    <div class="mx-auto text-center">
+                        <h2 class="h1 text-primary d-inline-block">Who We Are</h2>
+                        <p class="primary-text mt-4 text-center who-we-are-body">
+                            Welcome to Mzehemen U Tiv, a vibrant non-profit organization dedicated to improving the social and economic situation in Tiv land, Benue State, Nigeria. We aim to make the Tiv nation stronger by promoting our ambitions, celebrating our culture, and honoring those who impact society in a positive way. 
+                        </p>
+                        <a href="about-us.html" class="btn btn-primary btn-lg px-4">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Key sections with icons -->
+            <div class="container py-5">
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card h-100 border-success hover-card">
+                            <div class="card-body text-center">
+                                <div class="icon-container mb-3">
+                                    <i class="bi bi-info-circle text-primary" style="font-size: 3rem;"></i>
+                                </div>
+                                <h3 class="card-title">About Us</h3>
+                                <p class="card-text">Learn about our organization's history, purpose, and the people behind our mission.</p>
+                                <a href="about-us.html" class="btn btn-primary btn-lg px-4 ">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card h-100 border-success hover-card">
+                            <div class="card-body text-center">
+                                <div class="icon-container mb-3">
+                                    <i class="bi bi-bullseye text-primary" style="font-size: 3rem;"></i>
+                                </div>
+                                <h3 class="card-title">Mission & Vision</h3>
+                                <p class="card-text">Discover our guiding principles and the future we're working to create for the Tiv nation.</p>
+                                <a href="mission-vision.html" class="btn btn-primary btn-lg px-4 ">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card h-100 border-success hover-card">
+                            <div class="card-body text-center">
+                                <div class="icon-container mb-3">
+                                    <i class="bi bi-heart text-primary" style="font-size: 3rem;"></i>
+                                </div>
+                                <h3 class="card-title">Our Cause</h3>
+                                <p class="card-text">Explore the core issues we address and why our work matters to the Tiv people.</p>
+                                <a href="our-cause.html" class="btn btn-primary btn-lg px-4 ">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card h-100 border-success hover-card">
+                            <div class="card-body text-center">
+                                <div class="icon-container mb-3">
+                                    <i class="bi bi-journal-richtext text-primary" style="font-size: 3rem;"></i>
+                                </div>
+                                <h3 class="card-title">Impact Stories</h3>
+                                <p class="card-text">See how our work is making a difference through real stories from societies we serve.</p>
+                                <a href="impact-stories.html" class="btn btn-primary btn-lg px-4 ">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- mission and vision start -->
+        <!-- <div class="container py-5">
+            <span class="h1 w-auto">Our Mission</span>
+            <p class="primary-text mt-5">
+                Welcome to Mzehemen U Tiv, a very active and dynamic non-profit organisation that is totally committed to improving the social and economic situation of the Tiv land in Benue State, Nigeria. Our aim is to enrich the Tiv nation significantly by supporting our different causes, relishing the rich and lively culture we love, and honoring those great individuals who make a positive impact on society in their own ways. Founded in 2019 by visionary Professor Kohol Iornem, our central goal is to build an active and lasting Tiv community. This is to be a nation where every person, along with every ethnic group therein, can readily access the available supplies and ample opportunities that they require to realize their full potential. Mzehemen U Tiv is incorporated in Nigeria under the Corporate Affairs Commission and in the United Kingdom under Companies House. This renders us a legal and dedicated entity in both countries. We are pleased to spearhead activities that serve society, promote new ideas, and work towards preserving our valuable cultural heritage. Along with this, we also strive to seek out and even appreciate those Tiv sons and daughters who, by sheer willpower and determination, make enormous contributions that further enhance and develop our society as a whole. You are welcome to be part of this important project as we try to uplift and inspire the Tiv people in every sphere!
+            </p>
+        </div>
+
+        about us start
+        <div class="container py-5">
+            <span class="h1 w-auto">Our Vision</span>
+            <p class="primary-text mt-5">
+                Welcome to Mzehemen U Tiv, a very active and dynamic non-profit organisation that is totally committed to improving the social and economic situation of the Tiv land in Benue State, Nigeria. Our aim is to enrich the Tiv nation significantly by supporting our different causes, relishing the rich and lively culture we love, and honoring those great individuals who make a positive impact on society in their own ways. Founded in 2019 by visionary Professor Kohol Iornem, our central goal is to build an active and lasting Tiv community. This is to be a nation where every person, along with every ethnic group therein, can readily access the available supplies and ample opportunities that they require to realize their full potential. Mzehemen U Tiv is incorporated in Nigeria under the Corporate Affairs Commission and in the United Kingdom under Companies House. This renders us a legal and dedicated entity in both countries. We are pleased to spearhead activities that serve society, promote new ideas, and work towards preserving our valuable cultural heritage. Along with this, we also strive to seek out and even appreciate those Tiv sons and daughters who, by sheer willpower and determination, make enormous contributions that further enhance and develop our society as a whole. You are welcome to be part of this important project as we try to uplift and inspire the Tiv people in every sphere!
+            </p>
+        </div>  -->
+
+
+        <!-- about us start -->
+        <div class="container-fluid bg-light">
+            <div class="container py-5">
+                <div class="text-center">
+                    <h1 class="mt-3 border-4 h1 d-inline-block text-primary">Our Interests</h1><br>
+                    <span class="w-auto text-secondary secondary-text">We are particularly interested in the following areas.</span>
+                </div>
+                <div class="text-center">
+                    <div class="row mt-3">
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100">
+                                <img src="./assets/images/IMG-20250417-WA0010.jpg" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title">Promoting Entrepreneurship and Innovation.</h5>
+                                    <p class="card-text">We aim to provide financial support, training, and mentorship to aspiring Tiv entrepreneurs.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100">
+                                <img src="./assets/images/IMG-20250417-WA0002.jpg" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title">Empowering Women and Youth.</h5>
+                                    <p class="card-text">We plan to implement targeted programs and initiatives that empower Tiv women and youth.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100">
+                                <img src="./assets/images/IMG-20250417-WA0008.jpg" alt="">
+                                <div class="card-body">
+                                    <h5 class="card-title">Enhancing Access to Education and Healthcare.</h5>
+                                    <p class="card-text">Our goal is to collaborate with local stakeholders to improve access to healthcare services for Tiv communities.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="" class="btn btn-primary btn-lg px-4 ">View More</a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Award start -->
+        <div class="container-fluid">
+            <div class="container py-5 text-center">
+                <div class="text-center text-primary">
+                    <h1 class="mt-3 border-4 h1 d-inline-block">Mzehemen Awards</h1><br>
+                    <span class="w-auto text-secondary secondary-text">We invite you to support Mzehemen U Tiv in its noble mission to foster a thriving Tiv nation.</span>
+                </div>
+                    <div class="row g-4 py-3">
+                        <!-- The Integrity Award -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card award-card border-0 shadow-sm">
+                                <div class="card-body p-4 text-center">
+                                    <div class="mb-3">
+                                        <i class="bi bi-shield-check award-icon text-primary"></i>
+                                    </div>
+                                    <h4 class="card-title">The Integrity Award</h4>
+                                    <p class="card-text">Recognizes an individual who upholds the highest ethical standards and is dedicated to serving others through transparency and accountability.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- The Young Achiever Award -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card award-card border-0 shadow-sm">
+                                <div class="card-body p-4 text-center">
+                                    <div class="mb-3">
+                                        <i class="bi bi-lightning-charge award-icon text-primary"></i>
+                                    </div>
+                                    <h4 class="card-title">The Young Achiever Award</h4>
+                                    <p class="card-text">Recognises young people's achievements. We invest in their future capabilities as young activists by offering cash prizes, access to project awards, money-can't-buy opportunities, and mentoring.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- The Public Service Award -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="card award-card border-0 shadow-sm">
+                                <div class="card-body p-4 text-center">
+                                    <div class="mb-3">
+                                        <i class="bi bi-people award-icon text-primary"></i>
+                                    </div>
+                                    <h4 class="card-title">The Public Service Award</h4>
+                                    <p class="card-text">Recognises distinguished service to country, state, community, or public, with respect to local custom and considering the different cultural perceptions of public service, through excellence in leadership, service, or humanitarianism.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <a href="awards.html" class="btn btn-primary btn-lg px-4 ">View More</a>
+            </div>
+        </div>
+
+        <!-- Call to Action -->
+        <section class="py-5 bg-dark text-white">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="text-white display-5 fw-bold">Ways You Can Help</h2>
+                    <p class="lead mx-auto text-light" style="max-width: 700px;">Mzehemen U Tiv is committed to creating sustainable development and prosperity across Tiv communities. Your support makes our vital work possible.</p>
+                </div>
+                
+                <div class="row g-4 justify-content-center">
+                    <!-- Donate Card -->
+                    <div class="col-md-4">
+                        <div class="card h-100 border-0 shadow-sm rounded-3 overflow-hidden bg-light text-white">
+                            <div class="bg-primary text-center py-4">
+                                <i class="bi bi-heart-fill text-white" style="font-size: 3.5rem;"></i>
+                            </div>
+                            <div class="card-body text-center p-4">
+                                <h4 class="card-title text-primary">Donate</h4>
+                                <p class="card-text mb-4">Your financial contribution supports our programs and creates lasting impact in Tiv communities. Every donation helps us reach more people in need.</p>
+                                <a href="contribute.html" class="btn btn-primary btn-lg px-4">Give Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Volunteer Card -->
+                    <div class="col-md-4">
+                        <div class="card h-100 border-0 shadow-sm rounded-3 overflow-hidden bg-light text-white">
+                            <div class="bg-primary text-center py-4">
+                                <i class="bi bi-people-fill text-white" style="font-size: 3.5rem;"></i>
+                            </div>
+                            <div class="card-body text-center p-4">
+                                <h4 class="card-title text-primary">Volunteer</h4>
+                                <p class="card-text mb-4">Share your time, skills, and passion to help strengthen Tiv communities. Volunteering creates meaningful connections and drives change.</p>
+                                <a href="volunteer.html" class="btn btn-primary btn-lg px-4">Join Us</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Learn More Card -->
+                    <div class="col-md-4">
+                        <div class="card h-100 border-0 shadow-sm rounded-3 overflow-hidden bg-light text-white">
+                            <div class="bg-primary text-center py-4">
+                                <i class="bi bi-book-fill text-white" style="font-size: 3.5rem;"></i>
+                            </div>
+                            <div class="card-body text-center p-4">
+                                <h4 class="card-title text-primary">Learn More</h4>
+                                <p class="card-text mb-4">Discover our initiatives and see how we're making a difference in communities. Knowledge is the first step toward meaningful action.</p>
+                                <a href="blog.html" class="btn btn-primary btn-lg px-4">Explore</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-5">
+                    <p class="fst-italic text-light">"Ka u i doo Tiv la se soo ye" — Together we can make a difference</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="container-fluid">
+        <div class="border-top border-3 mt-5 py-5">
+            <div class="container">
+                <div class="row">
+                    <!-- Logo Section -->
+                    <div class="col-md-3 mb-4 mb-md-0 d-flex flex-column">
+                        <div class="logo-container d-flex flex-row align-items-center" style="">
+                            <img src="./assets/images/main-logo-transparent.png" alt="Save the Children logo" class="img-fluid" width="80px">
+                            <h4 class="text-primary">Mzehemen U Tiv</h4>
+                        </div>
+                        <div class=" text-center" style=" width: 70%;">
+                            <span class="h6">
+                                Supporting initiatives that foster the growth and development of the Tiv nation.
+                            </span> <br>
+                            <span>
+                                "Ka u i doo Tiv la se soo ye"
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <!-- Links Section -->
+                    <div class="col-md-6">
+                        <div class="row footer-links">
+                            <!-- First column of links -->
+                            <div class="col-6 col-md-6">
+                                <a href="about-us.html">About Us</a>
+                                <a href="mission-vision.html">Mission & Vision</a>
+                                <a href="contribute.html">Contribute</a>
+                                <a href="volunteer.html">Volunteer</a>
+                                <a href="impact-stories.html">Impact Stories</a>
+                            </div>
+                            
+                            <!-- Second column of links -->
+                            <div class="col-6 col-md-6">
+                                <a href="awards.html">Awards & Honors</a>
+                                <a href="contact-us.html">Contact Us</a>
+                                <a href="#">Terms of Use</a>
+                                <a href="#">Privacy Policy</a>
+                                <a href="#">Modern Slavery Statement</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Social Media Icons -->
+                    <div class="col-md-3 mt-4 mt-md-0">
+                        <h5 class="mb-3">FOLLOW US</h5>
+                        <div class="social-icons">
+                            <a href="https://web.facebook.com/people/Mzehemen-u-Tiv/61558419569681/" target="_blank"><i class="bi bi-facebook text-primary"></i></a>
+                            <a href="https://x.com/mzehemen_u_tiv" target="_blank"><i class="bi bi-twitter-x text-primary"></i></a>
+                            <a href="#"><i class="bi bi-linkedin text-primary"></i></a>
+                            <a href="#"><i class="bi bi-instagram text-primary"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Footer Legal Text -->
+        <div class="footer-bottom container">
+            <div class="row">
+                <div class="col-12">
+                    <p class="text-center text-muted">
+                        Mzehemen U Tiv is registered in Nigeria with the Corporate Affairs Commission and in the United Kingdom with Companies House
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    
+    <!-- Bootstrap Icons -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./assets/js/bootstrap.bundle.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            speed: 1000,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            effect: "fade",
+            fadeEffect: {
+                crossFade: true
+            }
+        });
+    </script>
+</body>
+</html>

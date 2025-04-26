@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="icon" href="./assets/images/main-logo.jpg" type="image/x-icon">
+    <title>Executive Board - Mzehemen U Tiv</title>
+    <style>
+        .executive-hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./assets/images/IMG-20250417-WA0020.jpg') center/cover no-repeat;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+        }
+        .team-member {
+            transition: transform 0.3s ease;
+        }
+        .team-member:hover {
+            transform: translateY(-5px);
+        }
+        .member-img {
+            height: 180px;
+            width: 180px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 5px solid var(--bs-primary);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+                <a class="brand-logo" href="#">
+                    <img src="assets/images/main-logo-transparent.png" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-lg-0">
+                        <li class="nav-item nav-hover pe-2">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item nav-hover dropdown pe-2">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            About Us
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="about-us.html#who-we-are">Who We Are</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="about-us.html#mission-vision">Mission & Vision</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="about-us.html#our-cause">Our Cause</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="about-us.html#impact-stories">Impact Stories</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item nav-hover dropdown pe-2">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Ways To Help
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="contribute.html">Contribute</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="volunteer.html">Volunteer</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="awareness.html">Awareness</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item nav-hover dropdown pe-2">
+                            <a class="nav-link dropdown-toggle active-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Meet The Team
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item active" href="executive-board.html">Executive Board</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="team.html">Our Team</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item nav-hover pe-2">
+                            <a class="nav-link" aria-current="page" href="awards.html">Awards & Honors</a>
+                        </li>
+                        <li class="nav-item nav-hover pe-2">
+                            <a class="nav-link" aria-current="page" href="contact-us.html">Contact Us</a>
+                        </li>
+                        <li class="nav-item nav-hover pe-2 ">
+                            <a class="nav-link" aria-current="page" href="blog.html">Blog</a>
+                        </li>
+                    </ul>
+                    <div class="navbar-nav mb-lg-0">
+                        <li class="nav-item blog-item px-4 rounded-3 bg-primary">
+                            <a class="nav-link text-light blog-link" aria-current="page" href="contribute.html">Contribute</a>
+                        </li>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="executive-hero">
+        <div class="container text-center">
+            <h1 class="display-4 fw-bold text-light">Executive Board</h1>
+            <p class="lead text-light">Meet the leadership team guiding our mission and vision</p>
+        </div>
+    </section>
+
+    <!-- Executive Board Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="text-primary">Our Leadership</h2>
+                <p class="lead">The team responsible for strategic decisions and organizational oversight</p>
+            </div>
+            
+            <div class="row g-4 justify-content-center">
+                <!-- Prof Kohol Iornem -->
+                <div class="col-lg-3"></div>
+                <div class="col-lg-6">
+                    <div class="card h-100 border-0 shadow team-member text-center">
+                        <div class="card-body p-4">
+                            <div class="mb-4 d-flex justify-content-center">
+                                <div class="mb-3">
+                                    <i class="bi bi-person-circle text-dark" style="font-size: 100px;"></i>
+                                </div>
+                            </div>
+                            <h4>Prof. Kohol Iornem</h4>
+                            <p class="text-primary fw-bold">Chief Executive</p>
+                            <p class="secondary-text">Leading our organization with vision and dedication to advance the Tiv community's development.</p>
+                            <div class="mt-3">
+                                <a href="#" class="text-primary me-2" ><i class="bi bi-linkedin" style="font-size: 25px; color: var(--primary);"></i></a>
+                                <a href="#" class="text-primary me-2" ><i class="bi bi-twitter-x" style="font-size: 25px; color: var(--primary);"></i></a>
+                                <a href="#" class="text-primary" ><i class="bi bi-envelope-fill" style="font-size: 25px; color: var(--primary);"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3"></div>
+                
+                <!-- MaryJane Malu -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow team-member text-center">
+                        <div class="card-body p-4">
+                            <div class="mb-4 d-flex justify-content-center">
+                                <div class="mb-3">
+                                    <i class="bi bi-person-circle text-dark" style="font-size: 100px;"></i>
+                                </div>
+                            </div>
+                            <h4>MaryJane Malu</h4>
+                            <p class="text-primary fw-bold">Board Member</p>
+                            <p class="secondary-text">Bringing expertise and passion to our programs focused on community empowerment.</p>
+                            <div class="mt-3">
+                                <a href="#" class="text-primary me-2" ><i class="bi bi-linkedin" style="font-size: 25px; color: var(--primary);"></i></a>
+                                <a href="#" class="text-primary me-2" ><i class="bi bi-twitter-x" style="font-size: 25px; color: var(--primary);"></i></a>
+                                <a href="#" class="text-primary" ><i class="bi bi-envelope-fill" style="font-size: 25px; color: var(--primary);"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Julius Tsav -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow team-member text-center">
+                        <div class="card-body p-4">
+                            <div class="mb-4 d-flex justify-content-center">
+                                <div class="mb-3">
+                                    <i class="bi bi-person-circle text-dark" style="font-size: 100px;"></i>
+                                </div>
+                            </div>
+                            <h4>Julius Tsav</h4>
+                            <p class="text-primary fw-bold">Board Member</p>
+                            <p class="secondary-text">Contributing strategic insight to drive our initiatives for sustainable growth.</p>
+                            <div class="mt-3">
+                                <a href="#" class="text-primary me-2" ><i class="bi bi-linkedin" style="font-size: 25px; color: var(--primary);"></i></a>
+                                <a href="#" class="text-primary me-2" ><i class="bi bi-twitter-x" style="font-size: 25px; color: var(--primary);"></i></a>
+                                <a href="#" class="text-primary" ><i class="bi bi-envelope-fill" style="font-size: 25px; color: var(--primary);"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Kwaghzan Sophia -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow team-member text-center">
+                        <div class="card-body p-4">
+                            <div class="mb-4 d-flex justify-content-center">
+                                <div class="mb-3">
+                                    <i class="bi bi-person-circle text-dark" style="font-size: 100px;"></i>
+                                </div>
+                            </div>
+                            <h4>Kwaghzan Sophia</h4>
+                            <p class="text-primary fw-bold">Board Member</p>
+                            <p class="secondary-text">Dedicated to promoting cultural preservation and community development initiatives.</p>
+                            <div class="mt-3">
+                                <a href="#" class="text-primary me-2" ><i class="bi bi-linkedin" style="font-size: 25px; color: var(--primary);"></i></a>
+                                <a href="#" class="text-primary me-2" ><i class="bi bi-twitter-x" style="font-size: 25px; color: var(--primary);"></i></a>
+                                <a href="#" class="text-primary" ><i class="bi bi-envelope-fill" style="font-size: 25px; color: var(--primary);"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership Statement Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h2 class="text-primary mb-3">Leadership Commitment</h2>
+                    <p>Our Executive Board brings together diverse expertise and a shared passion for advancing the Tiv community. Together, we are committed to:</p>
+                    <ul class="list-group list-group-flush mb-4">
+                        <li class="list-group-item bg-transparent">
+                            <i class="bi bi-check-circle-fill text-primary me-2"></i>
+                            Strategic guidance that aligns with our mission and values
+                        </li>
+                        <li class="list-group-item bg-transparent">
+                            <i class="bi bi-check-circle-fill text-primary me-2"></i>
+                            Transparent governance and accountable leadership
+                        </li>
+                        <li class="list-group-item bg-transparent">
+                            <i class="bi bi-check-circle-fill text-primary me-2"></i>
+                            Building partnerships that amplify our impact
+                        </li>
+                        <li class="list-group-item bg-transparent">
+                            <i class="bi bi-check-circle-fill text-primary me-2"></i>
+                            Ensuring sustainable growth and community-driven initiatives
+                        </li>
+                    </ul>
+                    <p class="fst-italic">"Our leadership approach is guided by our core values of community empowerment, sustainability, and cultural preservation. We are dedicated to creating lasting positive change for the Tiv community."</p>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card border-0 shadow">
+                        <div class="card-body p-4">
+                            <h4 class="text-primary mb-3">Board Responsibilities</h4>
+                            <div class="mb-4">
+                                <h5><i class="bi text-primary bi-compass me-2"></i> Strategic Direction</h5>
+                                <p>Setting the organization's vision and developing strategic plans that advance our mission to support the Tiv community.</p>
+                            </div>
+                            <div class="mb-4">
+                                <h5><i class="bi text-primary bi-graph-up-arrow me-2"></i> Program Oversight</h5>
+                                <p>Monitoring the effectiveness of our initiatives and ensuring they align with community needs and priorities.</p>
+                            </div>
+                            <div class="mb-4">
+                                <h5><i class="bi text-primary bi-people me-2"></i> Community Engagement</h5>
+                                <p>Building meaningful relationships with stakeholders and ensuring community voices inform our work.</p>
+                            </div>
+                            <div>
+                                <h5><i class="bi text-primary bi-shield-check me-2"></i> Governance</h5>
+                                <p>Maintaining fiscal responsibility and ethical standards in all our operations.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact CTA -->
+    <section class="py-5">
+        <div class="container text-center">
+            <h2 class="text-primary mb-4">Connect With Our Leadership</h2>
+            <p class="lead mb-4">Have questions for our Executive Board? We welcome your inquiries and feedback.</p>
+            <a href="contact-us.html" class="btn btn-primary btn-lg px-4">Contact the Board</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="container-fluid">
+        <div class="border-top border-3 mt-5 py-5">
+            <div class="container">
+                <div class="row">
+                    <!-- Logo Section -->
+                    <div class="col-md-3 mb-4 mb-md-0 d-flex flex-column">
+                        <div class="logo-container d-flex flex-row align-items-center" style="">
+                            <img src="./assets/images/main-logo-transparent.png" alt="Save the Children logo" class="img-fluid" width="80px">
+                            <h4 class="text-primary">Mzehemen U Tiv</h4>
+                        </div>
+                        <div class=" text-center" style=" width: 70%;">
+                            <span class="h6">
+                                Supporting initiatives that foster the growth and development of the Tiv nation.
+                            </span> <br>
+                            <span>
+                                "Ka u i doo Tiv la se soo ye"
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <!-- Links Section -->
+                    <div class="col-md-6">
+                        <div class="row footer-links">
+                            <!-- First column of links -->
+                            <div class="col-6 col-md-6">
+                                <a href="about-us.html">About Us</a>
+                                <a href="mission-vision.html">Mission & Vision</a>
+                                <a href="contribute.html">Contribute</a>
+                                <a href="volunteer.html">Volunteer</a>
+                                <a href="impact-stories.html">Impact Stories</a>
+                            </div>
+                            
+                            <!-- Second column of links -->
+                            <div class="col-6 col-md-6">
+                                <a href="awards.html">Awards & Honors</a>
+                                <a href="contact-us.html">Contact Us</a>
+                                <a href="#">Terms of Use</a>
+                                <a href="#">Privacy Policy</a>
+                                <a href="#">Modern Slavery Statement</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Social Media Icons -->
+                    <div class="col-md-3 mt-4 mt-md-0">
+                        <h5 class="mb-3">FOLLOW US</h5>
+                        <div class="social-icons">
+                            <a href="https://web.facebook.com/people/Mzehemen-u-Tiv/61558419569681/" target="_blank"><i class="bi bi-facebook text-primary"></i></a>
+                            <a href="https://x.com/mzehemen_u_tiv" target="_blank"><i class="bi bi-twitter-x text-primary"></i></a>
+                            <a href="#"><i class="bi bi-linkedin text-primary"></i></a>
+                            <a href="#"><i class="bi bi-instagram text-primary"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Footer Legal Text -->
+        <div class="footer-bottom container">
+            <div class="row">
+                <div class="col-12">
+                    <p class="text-center text-muted">
+                        Mzehemen U Tiv is registered in Nigeria with the Corporate Affairs Commission and in the United Kingdom with Companies House
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.1/font/bootstrap-icons.min.css">
+    <script src="./assets/js/bootstrap.bundle.js"></script>
+</body>
+</html>

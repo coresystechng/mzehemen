@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="icon" href="./assets/images/main-logo.jpg" type="image/x-icon">
+    <title>Contact Us - Mzehemen U Tiv</title>
+    <style>
+        .contact-hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./assets/images/IMG-20250417-WA0005.jpg') center/cover no-repeat;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+        }
+        .contact-card {
+            transition: transform 0.3s ease;
+        }
+        .contact-card:hover {
+            transform: translateY(-5px);
+        }
+        .contact-icon {
+            font-size: 2.5rem;
+            color: var(--bs-primary);
+        }
+        .form-control:focus {
+            border-color: var(--bs-primary);
+            box-shadow: 0 0 0 0.25rem rgba(var(--bs-primary-rgb), 0.25);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+                <a class="brand-logo" href="#">
+                    <img src="assets/images/main-logo-transparent.png" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-lg-0">
+                        <li class="nav-item nav-hover pe-2">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item nav-hover dropdown pe-2">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            About Us
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="about-us.html#who-we-are">Who We Are</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="about-us.html#mission-vision">Mission & Vision</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="about-us.html#our-cause">Our Cause</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="about-us.html#impact-stories">Impact Stories</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item nav-hover dropdown pe-2">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Ways To Help
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="contribute.html">Contribute</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="volunteer.html">Volunteer</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="awareness.html">Awareness</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item nav-hover dropdown pe-2">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Meet The Team
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="executive-board.html">Executive Board</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="team.html">Our Team</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item nav-hover pe-2">
+                            <a class="nav-link" aria-current="page" href="awards.html">Awards & Honors</a>
+                        </li>
+                        <li class="nav-item nav-hover pe-2">
+                            <a class="nav-link active-link" aria-current="page" href="contact-us.html">Contact Us</a>
+                        </li>
+                        <li class="nav-item nav-hover pe-2 ">
+                            <a class="nav-link" aria-current="page" href="blog.html">Blog</a>
+                        </li>
+                    </ul>
+                    <div class="navbar-nav mb-lg-0">
+                        <li class="nav-item blog-item px-4 rounded-3 bg-primary">
+                            <a class="nav-link text-light blog-link" aria-current="page" href="contribute.html">Contribute</a>
+                        </li>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="contact-hero">
+        <div class="container text-center">
+            <h1 class="display-4 fw-bold text-light">Contact Us</h1>
+            <p class="lead text-light">We're here to answer your questions and welcome your feedback</p>
+        </div>
+    </section>
+
+    <!-- Contact Information Cards -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="text-primary">Get In Touch</h2>
+                <p class="lead">We'd love to hear from you. Here's how you can reach us.</p>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Email -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow contact-card text-center">
+                        <div class="card-body p-4">
+                            <div class="mb-3">
+                                <i class="text-primary bi bi-envelope contact-icon"></i>
+                            </div>
+                            <h4>Email Us</h4>
+                            <p class="mb-2">General Inquiries:</p>
+                            <p class="text-primary mb-2">dummy@gmail.com</p>
+                            <p class="mb-2">Support:</p>
+                            <p class="text-primary">dummy@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Phone -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow contact-card text-center">
+                        <div class="card-body p-4">
+                            <div class="mb-3">
+                                <i class="text-primary bi bi-telephone contact-icon"></i>
+                            </div>
+                            <h4>Call Us</h4>
+                            <p class="mb-2">Nigeria Office:</p>
+                            <p class="text-primary mb-2">+234 700 000 0000</p>
+                            <p class="mb-2">UK Office:</p>
+                            <p class="text-primary">+44 20 1234 5678</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Office Locations -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow contact-card text-center">
+                        <div class="card-body p-4">
+                            <div class="mb-3">
+                                <i class="text-primary bi bi-geo-alt contact-icon"></i>
+                            </div>
+                            <h4>Visit Us</h4>
+                            <p class="mb-2">Nigeria:</p>
+                            <p class="text-primary mb-2">123 Gboko Road, Makurdi, Benue State</p>
+                            <p class="mb-2">United Kingdom:</p>
+                            <p class="text-primary">456 London Street, London, UK</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mx-auto">
+                    <div class="card border-0 shadow">
+                        <div class="card-body p-5">
+                            <h3 class="text-primary mb-4 text-center">Send Us a Message</h3>
+                            
+                            <form>
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Full Name</label>
+                                    <input type="text" class="form-control" id="name" placeholder="Enter your full name">
+                                </div>
+                                
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email Address</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Enter your email address">
+                                </div>
+                                
+                                <div class="mb-3">
+                                    <label for="subject" class="form-label">Subject</label>
+                                    <input type="text" class="form-control" id="subject" placeholder="Enter subject">
+                                </div>
+                                
+                                <div class="mb-4">
+                                    <label for="message" class="form-label">Message</label>
+                                    <textarea class="form-control" id="message" rows="5" placeholder="Enter your message"></textarea>
+                                </div>
+                                
+                                <div class="d-grid">
+                                    <button type="submit" class="btn btn-primary btn-lg px-4">Send Message</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="text-primary">Frequently Asked Questions</h2>
+                <p class="lead">Find quick answers to common questions</p>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="accordion" id="faqAccordion">
+                        <!-- FAQ Item 1 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    How can I contribute to Mzehemen U Tiv?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    You can contribute to our cause through financial donations, volunteering your time and skills, or by raising awareness. Visit our <a href="contribute.html" class="text-primary">Contribute page</a> for more information on how you can help.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- FAQ Item 2 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    How can I volunteer with Mzehemen U Tiv?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    We welcome volunteers who share our passion for serving the Tiv community. Check our <a href="volunteer.html" class="text-primary">Volunteer page</a> for current opportunities and information on how to apply.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- FAQ Item 3 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    How are donations used?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Your donations directly support our community programs, educational initiatives, and humanitarian efforts. We are committed to transparency and provide detailed information on how funds are allocated in our annual reports.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- FAQ Item 4 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    Can I nominate someone for a Mzehemen Award?
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Yes, we welcome nominations for our various award categories. Visit our <a href="#" class="text-primary">Awards & Honors page</a> for information on the nomination process and eligibility criteria.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="text-primary">Find Us</h2>
+                <p class="lead">Our offices are located in Nigeria</p>
+            </div>
+            
+            <div class="row">
+                <div class="col-12">
+                    <div class="bg-secondary text-center py-5">
+                        <p class="text-light mb-0">Google Maps </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Footer -->
+    <footer class="container-fluid">
+        <div class="border-top border-3 mt-5 py-5">
+            <div class="container">
+                <div class="row">
+                    <!-- Logo Section -->
+                    <div class="col-md-3 mb-4 mb-md-0 d-flex flex-column">
+                        <div class="logo-container d-flex flex-row align-items-center" style="">
+                            <img src="./assets/images/main-logo-transparent.png" alt="Save the Children logo" class="img-fluid" width="80px">
+                            <h4 class="text-primary">Mzehemen U Tiv</h4>
+                        </div>
+                        <div class=" text-center" style=" width: 70%;">
+                            <span class="h6">
+                                Supporting initiatives that foster the growth and development of the Tiv nation.
+                            </span> <br>
+                            <span>
+                                "Ka u i doo Tiv la se soo ye"
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <!-- Links Section -->
+                    <div class="col-md-6">
+                        <div class="row footer-links">
+                            <!-- First column of links -->
+                            <div class="col-6 col-md-6">
+                                <a href="about-us.html">About Us</a>
+                                <a href="mission-vision.html">Mission & Vision</a>
+                                <a href="contribute.html">Contribute</a>
+                                <a href="volunteer.html">Volunteer</a>
+                                <a href="impact-stories.html">Impact Stories</a>
+                            </div>
+                            
+                            <!-- Second column of links -->
+                            <div class="col-6 col-md-6">
+                                <a href="awards.html">Awards & Honors</a>
+                                <a href="contact-us.html">Contact Us</a>
+                                <a href="#">Terms of Use</a>
+                                <a href="#">Privacy Policy</a>
+                                <a href="#">Modern Slavery Statement</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Social Media Icons -->
+                    <div class="col-md-3 mt-4 mt-md-0">
+                        <h5 class="mb-3">FOLLOW US</h5>
+                        <div class="social-icons">
+                            <a href="https://web.facebook.com/people/Mzehemen-u-Tiv/61558419569681/" target="_blank"><i class="bi bi-facebook text-primary"></i></a>
+                            <a href="https://x.com/mzehemen_u_tiv" target="_blank"><i class="bi bi-twitter-x text-primary"></i></a>
+                            <a href="#"><i class="bi bi-linkedin text-primary"></i></a>
+                            <a href="#"><i class="bi bi-instagram text-primary"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Footer Legal Text -->
+        <div class="footer-bottom container">
+            <div class="row">
+                <div class="col-12">
+                    <p class="text-center text-muted">
+                        Mzehemen U Tiv is registered in Nigeria with the Corporate Affairs Commission and in the United Kingdom with Companies House
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.1/font/bootstrap-icons.min.css">
+    <script src="./assets/js/bootstrap.bundle.js"></script>
+</body>
+</html>
