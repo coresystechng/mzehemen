@@ -74,54 +74,29 @@
         .swiper-pagination-bullet-active {
             background: var(--primary);
         }
-         /* Mobile Banner Styles */
-        .mobile-banner {
-            position: relative;
-            height: 400px;
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: left;
+        @media (max-width: 768px) {
+        .swiper {
+            height: 500px; 
         }
 
-        .banner-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0,0,0,0.4); 
+        .slide-content{
+            max-width: 500px;
+            padding: 0 50px;
         }
 
-        .banner-content {
-            position: relative;
-            z-index: 1;
-            color: white;
-            padding: 20px;
-            max-width: 90%;
+        .slide-title {
+            font-size: 2rem; 
         }
 
-        .banner-title {
-            font-size: 2.5rem;
-            font-weight: bold;
-            margin-bottom: 15px;
-            text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+        .slide-description {
+            font-size: 0.9rem; 
         }
 
-        .banner-description {
-            font-size: 1.25rem;
-            margin-bottom: 25px;
-            text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+        .slide-content a.btn {
+            font-size: 18px !important; 
+            padding: 0.5rem 1rem; 
         }
-
-        .mobile-banner .btn-primary {
-            padding: 12px 20px;
-            font-size: 1.1rem;
-            font-weight: 600;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-        }
+    }
     </style>
 </head>
 <body>
@@ -197,17 +172,18 @@
     </header>
 
     <main>
-        <div class="swiper-container d-none d-md-block">
+        <div class="swiper-container">
             <div class="swiper mySwiper">
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
                     <!-- Slide 1 -->
                     <div class="swiper-slide" style="background-image: url('./assets/images/IMG-20250417-WA0017.jpg'); background-size: cover; background-position: center;">
                         <div class="slide-content">
-                            <h1 class="slide-title">Welcome to Mzehemen U Tiv</h1>
-                            <p class="slide-description">Ka u i doo Tiv la se soo ye.</p>
-                            <a href="contribute.html" class="btn btn-primary btn-lg px-4" style="font-size: 28px;">
-                                    Donate Now <i class="bi bi-arrow-right text-light ps-1"></i></a>
+                            <h1 class="slide-title display-4 display-md-2">Welcome to Mzehemen U Tiv</h1>
+                            <p class="slide-description fs-5 fs-md-4">Ka u i doo Tiv la se soo ye.</p>
+                            <a href="contribute.html" class="btn btn-primary btn-md btn-lg px-3 px-md-4" style="font-size: 20px;">
+                                Donate Now <i class="bi bi-arrow-right text-light ps-1"></i>
+                            </a>
                         </div>
                     </div>
                     
@@ -250,17 +226,6 @@
                 <div class="swiper-pagination"></div>
             </div>
         </div>
-
-        <!-- Mobile Banner -->
-        <div class="mobile-banner d-md-none" style="background-image: url('./assets/images/IMG-20250417-WA0017.jpg');">
-            <div class="banner-overlay"></div>
-            <div class="banner-content">
-                <h1 class="banner-title">Join Our Mission</h1>
-                <p class="banner-description text-light">Help us build a stronger Tiv community today</p>
-                <a href="contribute.html" class="btn btn-primary btn-lg" style="font-size: 22px;">Donate Now <i class="bi bi-chevron-right text-light ps-1"></i></a>
-            </div>
-        </div>
-
 
         <section class="">
             <!-- Overview section -->
@@ -448,59 +413,59 @@
         </div>
 
         <!-- Call to Action -->
-        <section class="py-5 bg-light">
+        <section class="py-5 bg-dark text-white">
             <div class="container">
                 <div class="text-center mb-5">
-                    <h2 class="text-primary display-5 fw-bold">Ways You Can Help</h2>
-                    <p class="lead mx-auto" style="max-width: 700px;">Mzehemen U Tiv is committed to creating sustainable development and prosperity across Tiv communities. Your support makes our vital work possible.</p>
+                    <h2 class="text-white display-5 fw-bold">Ways You Can Help</h2>
+                    <p class="lead mx-auto text-light" style="max-width: 700px;">Mzehemen U Tiv is committed to creating sustainable development and prosperity across Tiv communities. Your support makes our vital work possible.</p>
                 </div>
                 
                 <div class="row g-4 justify-content-center">
                     <!-- Donate Card -->
                     <div class="col-md-4">
-                        <div class="card h-100 border-0 shadow-sm rounded-3 overflow-hidden">
+                        <div class="card h-100 border-0 shadow-sm rounded-3 overflow-hidden bg-light text-white">
                             <div class="bg-primary text-center py-4">
                                 <i class="bi bi-heart-fill text-white" style="font-size: 3.5rem;"></i>
                             </div>
                             <div class="card-body text-center p-4">
-                                <h4 class="card-title">Donate</h4>
+                                <h4 class="card-title text-primary">Donate</h4>
                                 <p class="card-text mb-4">Your financial contribution supports our programs and creates lasting impact in Tiv communities. Every donation helps us reach more people in need.</p>
-                                <a href="contribute.html" class="btn btn-primary btn-lg px-4 rounded-pill">Give Now</a>
+                                <a href="contribute.html" class="btn btn-primary btn-lg px-4">Give Now</a>
                             </div>
                         </div>
                     </div>
                     
                     <!-- Volunteer Card -->
                     <div class="col-md-4">
-                        <div class="card h-100 border-0 shadow-sm rounded-3 overflow-hidden">
+                        <div class="card h-100 border-0 shadow-sm rounded-3 overflow-hidden bg-light text-white">
                             <div class="bg-primary text-center py-4">
                                 <i class="bi bi-people-fill text-white" style="font-size: 3.5rem;"></i>
                             </div>
                             <div class="card-body text-center p-4">
-                                <h4 class="card-title">Volunteer</h4>
+                                <h4 class="card-title text-primary">Volunteer</h4>
                                 <p class="card-text mb-4">Share your time, skills, and passion to help strengthen Tiv communities. Volunteering creates meaningful connections and drives change.</p>
-                                <a href="volunteer.html" class="btn btn-primary btn-lg px-4 rounded-pill">Join Us</a>
+                                <a href="volunteer.html" class="btn btn-primary btn-lg px-4">Join Us</a>
                             </div>
                         </div>
                     </div>
                     
                     <!-- Learn More Card -->
                     <div class="col-md-4">
-                        <div class="card h-100 border-0 shadow-sm rounded-3 overflow-hidden">
+                        <div class="card h-100 border-0 shadow-sm rounded-3 overflow-hidden bg-light text-white">
                             <div class="bg-primary text-center py-4">
                                 <i class="bi bi-book-fill text-white" style="font-size: 3.5rem;"></i>
                             </div>
                             <div class="card-body text-center p-4">
-                                <h4 class="card-title">Learn More</h4>
+                                <h4 class="card-title text-primary">Learn More</h4>
                                 <p class="card-text mb-4">Discover our initiatives and see how we're making a difference in communities. Knowledge is the first step toward meaningful action.</p>
-                                <a href="blog.html" class="btn btn-primary btn-lg px-4 rounded-pill">Explore</a>
+                                <a href="blog.html" class="btn btn-primary btn-lg px-4">Explore</a>
                             </div>
                         </div>
                     </div>
                 </div>
                 
                 <div class="text-center mt-5">
-                    <p class="fst-italic">"Ka u i doo Tiv la se soo ye" — Together we can make a difference</p>
+                    <p class="fst-italic text-light">"Ka u i doo Tiv la se soo ye" — Together we can make a difference</p>
                 </div>
             </div>
         </section>
@@ -594,7 +559,7 @@
                 prevEl: ".swiper-button-prev",
             },
             autoplay: {
-                delay: 5000,
+                delay: 3000,
                 disableOnInteraction: false,
             },
             effect: "fade",

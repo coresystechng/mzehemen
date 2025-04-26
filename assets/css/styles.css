@@ -69,13 +69,13 @@ body {
     line-height: 1.5;
     display: flex;
     flex-direction: column;
-    padding-top: 100px;
+    padding-top: 70px;
 }
 
 /* navbar */
 .brand-logo img{
-    width: 90px;
-    height: 90px;
+    width: 65px;
+    height: 65px;
 }
 .nav-item a{
     font-size: 25px;
