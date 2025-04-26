@@ -59,6 +59,7 @@ p, span, a, li, td {
 html {
     scroll-behavior: smooth;
     height: 100%;
+    scroll-padding-top: 70px;
 }
 
 body {
@@ -127,10 +128,6 @@ body {
     height: 60vh;
     display: flex;
     align-items: center;
-}
-
-.mission-vision {
-    background-color: var(--white);
 }
 
 .card {
@@ -304,6 +301,7 @@ input:focus {
         margin-bottom: 20px;
     }
 }
+
 
 /* footer */
 .logo-container img {
