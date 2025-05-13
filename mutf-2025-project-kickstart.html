@@ -7,43 +7,6 @@
     <link rel="stylesheet" href="./assets/css/styles.css">
     <link rel="icon" href="./assets/images/main-logo.jpg" type="image/x-icon">
     <title>Blog - Mzehemen U Tiv</title>
-    <style>
-        .blog-hero {
-            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./assets/images/hero2.jpg') center/cover no-repeat;
-            height: 60vh;
-            display: flex;
-            align-items: center;
-        }
-        .blog-card {
-            transition: transform 0.3s ease;
-            height: 100%;
-        }
-        .blog-card:hover {
-            transform: translateY(-5px);
-        }
-        .blog-img {
-            height: 200px;
-            width: 100%;
-            object-fit: cover;
-        }
-        .blog-category {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            background-color: var(--primary);
-            color: white;
-            padding: 5px 10px;
-            border-radius: 4px;
-            font-size: 0.8rem;
-        }
-        .blog-meta {
-            font-size: 0.85rem;
-            color: #6c757d;
-        }
-        .featured-post {
-            border-left: 4px solid var(--primary);
-        }
-    </style>
 </head>
 <body>
     <!-- Navigation -->
@@ -117,123 +80,47 @@
             </div>
         </nav>
     </header>
-
-    <!-- Hero Section -->
-    <section class="blog-hero">
-        <div class="container text-center">
-            <h1 class="display-4 fw-bold text-light">Our Blog</h1>
-            <p class="lead text-light">News, updates, and stories from the Tiv community</p>
-        </div>
-    </section>
-
-    <!-- Featured Post Section -->
-    <section class="py-5">
+    <main class="my-3 pt-5">
+      <section>
         <div class="container">
-            <div class="row">
-                <div class="col-lg-10 mx-auto">
-                    <div class="card border-0 shadow featured-post">
-                        <div class="row g-0">
-                            <div class="col-md-5">
-                                <img src="./assets/images/IMG_5009.JPG" class="img-fluid h-100 w-100 object-fit-cover rounded-start" alt="Featured post image">
-                            </div>
-                            <div class="col-md-7">
-                                <div class="card-body p-4">
-                                    <span class="badge bg-black bg-opacity-50 text-white">Featured</span>
-                                    <h2 class="card-title">MUTF kickstarts 2025 Project Implementation in Benue</h2>
-                                    <p class="blog-meta mb-3">May 15, 2025 • By Admin</p>
-                                    <p class="card-text">The Mzehemen U Tiv Foundation (MUTF), a charity registered in Nigeria and the United Kingdom (UK), has commenced implementing its 2025 projects to help widows and People Living With Disabilities (PWDs) in Benue State.</p>
-                                    <a href="mutf-2025-project-kickstart.html" class="btn btn-primary btn-lg">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+          <img src="./assets/images/IMG_5009.JPG" alt="" class="img-fluid shadow-lg rounded-3">
+          <h1 class="display-5 fw-bold text-primary my-4">MUTF kickstarts 2025 Project Implementation in Benue</h1>
+          <p class="lead">
+            The Mzehemen U Tiv Foundation (MUTF), a charity registered in Nigeria and the United Kingdom (UK), has commenced implementing its 2025 projects to help widows and People Living With Disabilities (PWDs) in Benue State. 
+            <br> <br>
+            MUTF was founded in 2019 by Dr. Kohol Iornem, a professor of Business Management. The organisation is at the forefront of community empowerment, innovation, and cultural preservation while also recognising and appreciating Tiv sons and daughters who make meaningful contributions to improving society.As part of its 2025 implementation strategy, on 7th May, MUTF Team was at Tomahar and Lessel, both in Ushongo Local Government Area (LGA), Benue State, issuing both education and business empowerment grants
+          </p>
+          <br>
+          <!-- <img src="assets/images/IMG_5009.JPG" alt="" class="img-fluid mb-4"> -->
+          <p class="lead">
+            Whereas Miss Ruth Erdoo Tarhule received an education grant of One Hundred and Ten Thousand Naira (N110, 000. 00), Mrs. Nguseer Orgem, a widow, received a grant of One Hundred Thousand Naira (N100,000.00) to enhance her businesses.
 
-    <!-- Blog Posts Section -->
-    <section class="py-5 bg-light">
-        <div class="container">
-            <div class="row mb-4">
-                <div class="col-md-8">
-                    <h2 class="text-primary">Latest Articles</h2>
-                </div>
-                <div class="col-md-4">
-                    <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Search blog...">
-                        <button class="btn btn-primary" type="button">
-                            <i class="bi bi-search text-light"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="row g-4">
-                <!-- Blog Post 1 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="card border-0 shadow blog-card">
-                        <img src="assets/images/IMG_5009.JPG" alt="" class="card-img">
-                            <div class="row">
-                                <div class="col-sm-4"></div>
-                                <div class="col-sm-4"></div>
-                                <div class="col-sm-4">
-                                    <span class="blog-category">Education</span>
-                                </div>
-                            </div>
-                        <div class="card-body p-4">
-                            <h4 class="card-title">MUTF kickstarts 2025 Project Implementation in Benue</h4>
-                            <p class="blog-meta mb-3">May 15, 2025 • By Admin</p>
-                            <p class="card-text">The Mzehemen U Tiv Foundation (MUTF) has commenced implementing its 2025 projects to help widows and People Living With Disabilities (PWDs) in Benue State.</p>
-                            <a href="/mutf-2025-project-kickstart.html" class="btn btn-sm btn-primary">Continue Reading</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Blog Post 2 -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="card border-0 shadow blog-card">
-                        <img src="assets/images/IMG_4992.JPG" alt="" class="card-img">
-                            <div class="row">
-                                <div class="col-sm-4"></div>
-                                <div class="col-sm-4"></div>
-                                <div class="col-sm-4">
-                                    <span class="blog-category">Education</span>
-                                </div>
-                            </div>
-                        <div class="card-body p-4">
-                            <h4 class="card-title">Aker Gajir Foundation grants five scholarship slots to MUTF</h4>
-                            <p class="blog-meta mb-3">May 12, 2025 • By Admin</p>
-                            <p class="card-text">The Aker Gajir Foundation has granted the Mzehemen U Tiv Foundation (MUTF) a full scholarship for five students to pursue the National Certificate in Education (NCE) at the Lessel College of Education.</p>
-                            <a href="/aker-gajir-grants-scholarships.html" class="btn btn-sm btn-primary">Continue Reading</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Blog Post 3 -->
-            </div>
-            
-            <!-- Pagination -->
-            <!-- <div class="row mt-5">
-                <div class="col-12">
-                    <nav aria-label="Blog pagination">
-                        <ul class="pagination justify-content-center">
-                            <li class="page-item disabled">
-                                <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
-                            </li>
-                            <li class="page-item active border-0"><a class="page-link bg-primary" href="#">1</a></li>
-                            <li class="page-item"><a class="page-link text-primary" href="#">2</a></li>
-                            <li class="page-item"><a class="page-link text-primary" href="#">3</a></li>
-                            <li class="page-item">
-                                <a class="page-link text-primary" href="#">Next</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </div> -->
-        </div>
-    </section>
+            Miss Erdoo lost her father while she was still in school, almost dashing her hopes for advanced studies. Although her school allowed her to continue her studies and pay her fees later, Miss Erdoo said her results were not released upon graduation because she owed fees.
 
-        <!-- Footer -->
+            "I thought I had lost all hope, but the Mzehemen U Tiv Foundation has given me hope again by paying all the fees I owed," Miss Erdoo said in appreciation.
+
+            From her reaction, the business grant was a huge relief to Mrs. Nguseer, who lost her business and husband, leaving her almost hopeless.
+
+            “My husband was ill and was admitted to the hospital, but we couldn’t afford the medical bills. We reached out to the Mzehemen U Tiv Foundation through Professor Kohol Iornem, and they were able to provide us with some support. Unfortunately, a couple of months later, my husband passed away.
+
+            "Professor Kohol Iornem then contacted me to check on my welfare. I told him that since my husband's passing, I have been unable to do anything. Previously, I used to sell garri in Gboko to make ends meet. I am happy to share that, through the Mzehemen U Tiv Foundation, I have received funding to restart my business.”
+          </p>
+          <br>
+          <p class="lead">
+            Brother Cyril Gajir, KSM, from Aker Gajir Foundation was deeply moved by MUTF's gesture. Through the Aker Gajir Foundation, he granted the MUTF a full scholarship for five students to pursue their National Certificate in Education (NCE) at Lessel College of Education Lessel.
+
+            A letter of offer to the President of MUTF, states in part: “As part of our corporate social responsibility, the foundation is pleased to offer scholarships to deserving candidates for NCE programme at Lessel College of Education, Lessel. We are allocating five slots to your organisation to benefit from this scholarship scheme."
+
+            Mr. Gbaden Atunku, Examination Officer, Lessel College of Education and Principal People’s Comprehensive High School, Lessel, also witnessed the presentation.
+
+            MUTF Community Engagement Officers, Hon Akor Ikyegh and Terese Wanjogo, made the presentations on behalf of the MUTF President, Prof. Kohol Iornem.
+
+            They also delivered the president's message of community empowerment, innovation, and cultural preservation.
+          </p>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
     <footer class="container-fluid">
         <div class="border-top border-3 mt-5 py-5">
             <div class="container">
