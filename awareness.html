@@ -219,10 +219,12 @@
             <p class="mb-4 text-light">Stay informed about Tiv community issues, success stories, and ways you can help spread awareness</p>
             <div class="row justify-content-center">
                 <div class="col-md-6">
-                    <form class="d-flex">
-                        <input type="email" class="form-control me-2" placeholder="Your email address">
+                    <form class="d-flex" action="./assets/scripts/newsletter.php" method="POST" id="newsletter-form">
+                        <input type="email" class="form-control me-2" placeholder="Your email address" id="email" name="email" required>
                         <button type="submit" class="btn btn-light">Subscribe</button>
                     </form>
+                    <!-- Message container -->
+                    <div id="messageBox"></div>
                 </div>
             </div>
         </div>
@@ -349,5 +351,24 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.1/font/bootstrap-icons.min.css">
     <script src="./assets/js/bootstrap.bundle.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $('#newsletter-form').on('submit', function(e) {
+            e.preventDefault(); // Prevent form from submitting the usual way
+
+            $.ajax({
+            type: 'POST',
+            url: 'assets/scripts/newsletter.php', // Your PHP file
+            data: { email: $('#email').val() },
+            success: function(response) {
+                $('#messageBox').html(response);
+                $('#newsletter-form')[0].reset(); // Optional: clear form
+            },
+            error: function() {
+                $('#messageBox').html('<div class="error">Something went wrong. Please try again.</div>');
+            }
+            });
+        });
+    </script>
 </body>
 </html>
