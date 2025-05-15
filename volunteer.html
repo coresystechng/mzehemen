@@ -171,62 +171,62 @@
                     <div class="card shadow border-0">
                         <div class="card-body p-4 p-md-5">
                             <h3 class="text-primary text-center mb-4">Volunteer Application</h3>
-                            <form>
+                            <form id="volunteer-form" action="./assets/scripts/volunteer.php" method="POST">
                                 <div class="row g-3">
                                     <div class="col-md-6">
-                                        <label for="firstName" class="form-label">First Name*</label>
-                                        <input type="text" class="form-control" id="firstName" required>
+                                        <label for="first_name" class="form-label">First Name</label>
+                                        <input type="text" class="form-control" id="first_name" name="first_name" required>
                                     </div>
                                     <div class="col-md-6">
-                                        <label for="lastName" class="form-label">Last Name*</label>
-                                        <input type="text" class="form-control" id="lastName" required>
+                                        <label for="last_name" class="form-label">Last Name</label>
+                                        <input type="text" class="form-control" id="last_name" name="last_name" required>
                                     </div>
                                     <div class="col-md-6">
-                                        <label for="email" class="form-label">Email*</label>
-                                        <input type="email" class="form-control" id="email" required>
+                                        <label for="email" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="email" name="email" required>
                                     </div>
                                     <div class="col-md-6">
-                                        <label for="phone" class="form-label">Phone Number*</label>
-                                        <input type="tel" class="form-control" id="phone" required>
+                                        <label for="phone_no" class="form-label">Phone Number</label>
+                                        <input type="tel" class="form-control" id="phone_no" name="phone_no" required>
                                     </div>
                                     
                                     <div class="col-12">
-                                        <label class="form-label">Areas of Interest*</label>
+                                        <label class="form-label">Areas of Interest</label>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="education" id="education">
+                                            <input class="form-check-input" type="checkbox" value="education" id="education" name="interests[]" >
                                             <label class="form-check-label" for="education">Educational Support</label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="business" id="business">
+                                            <input class="form-check-input" type="checkbox" value="business" id="business" name="interests[]" >
                                             <label class="form-check-label" for="business">Business Mentoring</label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="cultural" id="cultural">
+                                            <input class="form-check-input" type="checkbox" value="cultural" id="cultural" name="interests[]" >
                                             <label class="form-check-label" for="cultural">Cultural Programs</label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="events" id="events">
+                                            <input class="form-check-input" type="checkbox" value="events" id="events" name="interests[]" >
                                             <label class="form-check-label" for="events">Event Organization</label>
                                         </div>
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="other" id="other">
+                                            <input class="form-check-input" type="checkbox" value="other" id="other" name="interests[]" >
                                             <label class="form-check-label" for="other">Other</label>
                                         </div>
                                     </div>
                                     
                                     <div class="col-12">
                                         <label for="skills" class="form-label">Skills & Experience</label>
-                                        <textarea class="form-control" id="skills" rows="3" placeholder="Tell us about your skills and experience"></textarea>
+                                        <textarea class="form-control" id="skills" name="skills" rows="3" placeholder="Tell us about your skills and experience"></textarea>
                                     </div>
                                     
                                     <div class="col-12">
                                         <label for="availability" class="form-label">Availability*</label>
-                                        <select class="form-select" id="availability" required>
+                                        <select class="form-select" id="availability" required name="availability">
                                             <option selected disabled value="">Choose...</option>
-                                            <option>Weekdays</option>
-                                            <option>Weekends</option>
-                                            <option>Evenings</option>
-                                            <option>Flexible</option>
+                                            <option value="weekdays" >Weekdays</option>
+                                            <option value="weekends" >Weekends</option>
+                                            <option value="evenings" >Evenings</option>
+                                            <option value="flexible" >Flexible</option>
                                         </select>
                                     </div>
                                     
