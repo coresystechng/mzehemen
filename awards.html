@@ -306,25 +306,25 @@
             <div class="col-lg-10">
             <div class="card shadow border-0">
                 <div class="card-body p-4 p-md-5">
-                <form id="nominationForm">
+                <form id="nominationForm" action="./assets/scripts/nominations.php" method="POST" enctype="multipart/form-data">
                     <!-- Nominator Information -->
                     <h3 class="mb-4 border-bottom pb-2 text-primary">Your Information</h3>
                     <div class="row mb-4">
                     <div class="col-md-6 mb-3">
-                        <label for="nominatorName" class="form-label">Your Full Name *</label>
-                        <input type="text" class="form-control" id="nominatorName" required>
+                        <label for="nominator_name" class="form-label">Your Full Name *</label>
+                        <input type="text" class="form-control" id="nominator_name" name="nominator_name" required>
                     </div>
                     <div class="col-md-6 mb-3">
-                        <label for="nominatorEmail" class="form-label">Your Email Address *</label>
-                        <input type="email" class="form-control" id="nominatorEmail" required>
+                        <label for="nominator_email" class="form-label">Your Email Address *</label>
+                        <input type="email" class="form-control" id="nominator_email" name="nominator_email" required>
                     </div>
                     <div class="col-md-6 mb-3">
-                        <label for="nominatorPhone" class="form-label">Your Phone Number *</label>
-                        <input type="tel" class="form-control" id="nominatorPhone" required>
+                        <label for="nominator_phone" class="form-label">Your Phone Number *</label>
+                        <input type="tel" class="form-control" id="nominator_phone" name="nominator_phone" required>
                     </div>
                     <div class="col-md-6 mb-3">
-                        <label for="nominatorRelation" class="form-label">Your Relationship to Nominee *</label>
-                        <input type="text" class="form-control" id="nominatorRelation" required>
+                        <label for="nominator_relation" class="form-label">Your Relationship to Nominee *</label>
+                        <input type="text" class="form-control" id="nominator_relation" name="nominator_relation" required>
                     </div>
                     </div>
                     
@@ -332,16 +332,16 @@
                     <h4 class="mb-4 border-bottom pb-2">Nominee Information</h4>
                     <div class="row mb-4">
                     <div class="col-md-6 mb-3">
-                        <label for="nomineeName" class="form-label">Nominee's Full Name *</label>
-                        <input type="text" class="form-control" id="nomineeName" required>
+                        <label for="nominee_name" class="form-label">Nominee's Full Name *</label>
+                        <input type="text" class="form-control" id="nominee_name" name="nominee_name" required>
                     </div>
                     <div class="col-md-6 mb-3">
-                        <label for="nomineeAge" class="form-label">Nominee's Age *</label>
-                        <input type="number" class="form-control" id="nomineeAge" required>
+                        <label for="nominee_age" class="form-label">Nominee's Age *</label>
+                        <input type="number" class="form-control" id="nominee_age" name="nominee_age" required>
                     </div>
                     <div class="col-md-6 mb-3">
-                        <label for="nomineeGender" class="form-label">Nominee's Gender *</label>
-                        <select class="form-select" id="nomineeGender" required>
+                        <label for="nominee_gender" class="form-label">Nominee's Gender *</label>
+                        <select class="form-select" id="nominee_gender" name="nominee_gender" required>
                         <option value="" selected disabled>Select gender</option>
                         <option value="female">Female</option>
                         <option value="male">Male</option>
@@ -350,16 +350,16 @@
                         </select>
                     </div>
                     <div class="col-md-6 mb-3">
-                        <label for="nomineeEmail" class="form-label">Nominee's Email Address *</label>
-                        <input type="email" class="form-control" id="nomineeEmail" required>
+                        <label for="nominee_email" class="form-label">Nominee's Email Address *</label>
+                        <input type="email" class="form-control" id="nominee_email" name="nominee_email" required>
                     </div>
                     <div class="col-md-6 mb-3">
-                        <label for="nomineePhone" class="form-label">Nominee's Phone Number *</label>
-                        <input type="tel" class="form-control" id="nomineePhone" required>
+                        <label for="nominee_phone" class="form-label">Nominee's Phone Number *</label>
+                        <input type="tel" class="form-control" id="nominee_phone" name="nominee_phone" required>
                     </div>
                     <div class="col-md-6 mb-3">
-                        <label for="nomineeAddress" class="form-label">Nominee's Address *</label>
-                        <input type="text" class="form-control" id="nomineeAddress" required>
+                        <label for="nominee_address" class="form-label">Nominee's Address *</label>
+                        <input type="text" class="form-control" id="nominee_address" name="nominee_address" required>
                     </div>
                     </div>
                     
@@ -367,16 +367,16 @@
                     <h4 class="mb-4 border-bottom pb-2">Award Selection</h4>
                     <div class="row mb-4">
                     <div class="col-12 mb-3">
-                        <label for="awardCategory" class="form-label">Select Award Category *</label>
-                        <select class="form-select" id="awardCategory" required>
+                        <label for="award_category" class="form-label">Select Award Category *</label>
+                        <select class="form-select" id="award_category" name="award_category" required>
                         <option value="" selected disabled>Choose an award category</option>
-                        <option value="integrity">The Integrity Award</option>
-                        <option value="young-achiever">The Young Achiever Award</option>
-                        <option value="public-service">The Public Service Award</option>
-                        <option value="humanitarian">The Humanitarian Award</option>
-                        <option value="entrepreneurship">The Entrepreneurship Award</option>
-                        <option value="community-impact">The Community Impact Award</option>
-                        <option value="woman-of-year">The Woman of the Year Award</option>
+                        <option value="The Integrity Award">The Integrity Award</option>
+                        <option value="The Young Achiever Award">The Young Achiever Award</option>
+                        <option value="he Public Service Award">The Public Service Award</option>
+                        <option value="The Humanitarian Award">The Humanitarian Award</option>
+                        <option value="The Entrepreneurship Award">The Entrepreneurship Award</option>
+                        <option value="The Community Impact Award">The Community Impact Award</option>
+                        <option value="The Woman of the Year Award">The Woman of the Year Award</option>
                         </select>
                     </div>
                     </div>
@@ -385,24 +385,24 @@
                     <h4 class="mb-4 border-bottom pb-2">Nomination Details</h4>
                     <div class="row mb-4">
                     <div class="col-12 mb-3">
-                        <label for="nominationReason" class="form-label">Why are you nominating this person? *</label>
-                        <textarea class="form-control" id="nominationReason" rows="6" required placeholder="Please describe in detail how the nominee meets the criteria for this award. Include specific examples of their contributions and achievements."></textarea>
+                        <label for="nomination_reason" class="form-label">Why are you nominating this person? *</label>
+                        <textarea class="form-control" id="nomination_reason" name="nomination_reason" rows="6" required placeholder="Please describe in detail how the nominee meets the criteria for this award. Include specific examples of their contributions and achievements."></textarea>
                         <div class="form-text">Minimum 250 words recommended. Thorough nominations have a better chance of success.</div>
                     </div>
                     
                     <div class="col-12 mb-3">
-                        <label for="beforeContribution" class="form-label">How were things before they began? *</label>
-                        <textarea class="form-control" id="beforeContribution" rows="3" required></textarea>
+                        <label for="before_contribution" class="form-label">How were things before they began? *</label>
+                        <textarea class="form-control" id="before_contribution" name="before_contribution" rows="3" required></textarea>
                     </div>
                     
                     <div class="col-12 mb-3">
-                        <label for="afterContribution" class="form-label">How are things now? *</label>
-                        <textarea class="form-control" id="afterContribution" rows="3" required></textarea>
+                        <label for="after_contribution" class="form-label">How are things now? *</label>
+                        <textarea class="form-control" id="after_contribution" name="after_contribution" rows="3" required></textarea>
                     </div>
                     
                     <div class="col-12 mb-3">
-                        <label for="uniqueContribution" class="form-label">What makes your nominee different from others doing the same thing? *</label>
-                        <textarea class="form-control" id="uniqueContribution" rows="3" required></textarea>
+                        <label for="unique_contribution" class="form-label">What makes your nominee different from others doing the same thing? *</label>
+                        <textarea class="form-control" id="unique_contribution" name="unique_contribution" rows="3" required></textarea>
                     </div>
                     </div>
                     
@@ -410,19 +410,19 @@
                     <h4 class="mb-4 border-bottom pb-2">Supporting Documents</h4>
                     <div class="row mb-4">
                     <div class="col-md-6 mb-3">
-                        <label for="supportingDoc1" class="form-label">Upload Supporting Letter 1 *</label>
-                        <input type="file" class="form-control" id="supportingDoc1" required>
-                        <div class="form-text">PDF, DOC, or DOCX format. Max 2MB.</div>
+                        <label for="supporting_doc_1" class="form-label">Upload Supporting Letter 1 *</label>
+                        <input type="file" class="form-control" id="supporting_doc_1" name="supporting_doc_1" required>
+                        <div class="form-text">PDF, DOC, or DOCX format. Max 1MB.</div>
                     </div>
                     <div class="col-md-6 mb-3">
-                        <label for="supportingDoc2" class="form-label">Upload Supporting Letter 2 *</label>
-                        <input type="file" class="form-control" id="supportingDoc2" required>
-                        <div class="form-text">PDF, DOC, or DOCX format. Max 2MB.</div>
+                        <label for="supporting_doc_2" class="form-label">Upload Supporting Letter 2 *</label>
+                        <input type="file" class="form-control" id="supporting_doc_2" name="supporting_doc_2" required>
+                        <div class="form-text">PDF, DOC, or DOCX format. Max 1MB.</div>
                     </div>
                     <div class="col-md-6 mb-3">
-                        <label for="additionalEvidence" class="form-label">Additional Evidence (Optional)</label>
-                        <input type="file" class="form-control" id="additionalEvidence">
-                        <div class="form-text">Newspaper clippings, certificates, or other evidence. Max 5MB.</div>
+                        <label for="additional_evidence" class="form-label">Additional Evidence (Optional)</label>
+                        <input type="file" class="form-control" id="additional_evidence" name="additional_evidence">
+                        <div class="form-text">Newspaper clippings, certificates, or other evidence. Max 2MB.</div>
                     </div>
                     </div>
                     
@@ -430,8 +430,8 @@
                     <div class="row mt-4">
                     <div class="col-12 mb-4">
                         <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="consentCheck" required>
-                        <label class="form-check-label" for="consentCheck">
+                        <input class="form-check-input" type="checkbox" id="consent_check" name="consent_check" required>
+                        <label class="form-check-label" for="consent_check">
                             I confirm that all information provided is accurate to the best of my knowledge, and I have obtained consent from the nominee to submit this nomination. *
                         </label>
                         </div>
