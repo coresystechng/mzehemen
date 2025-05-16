@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Mzehemen U Tiv</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.1/font/bootstrap-icons.min.css">
+    <link rel="icon" href="./assets/images/main-logo.jpg" type="image/x-icon">
+    <style>
+        .login-container {
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+  <div class="login-container">
+    <div class="d-flex justify-content-center" id="spinner">
+      <div class="spinner-border text-primary" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    </div>
+  </div>
+  <script>
+    // Function to load the page after 10 seconds
+    function delayedLoad() {
+        setTimeout(function() {
+            document.getElementById('spinner').style.display = 'none'; // Hide the preloader
+            window.location.href = './assets/scripts/login.php'; // Change 'target-page.html' to your desired page
+        }, 3000); // 10000 milliseconds = 10 seconds
+    }
+
+      // Call the function when the page loads
+      delayedLoad();
+  </script>
+  <script src="./assets/js/bootstrap.bundle.js"></script>
+</body>
+</html>
