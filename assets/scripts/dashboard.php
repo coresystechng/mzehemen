@@ -12,6 +12,15 @@
   // Get logged in user's email
   $logged_user = $_SESSION['email'];
 
+  if (isset($_SESSION['LAST_ACTIVITY']) && (time() - $_SESSION['LAST_ACTIVITY'] > 600)) {
+    // Last request was more than 10 minutes ago
+    session_unset();
+    session_destroy();
+    header('Location: login.php?timeout=1');
+    exit();
+  }
+  $_SESSION['LAST_ACTIVITY'] = time();
+
   // Fetch first_name and last_name from users_tb
   $stmt = $conn->prepare("SELECT first_name, last_name FROM users_tb WHERE email = ?");
   $stmt->bind_param("s", $logged_user);
@@ -99,7 +108,7 @@
     <h6 class="display-5 py-5">Welcome, <?php echo $logged_user;?></h6>
     <div class="row g-4">
       <div class="col-md-3">
-        <a href="#" class="text-decoration-none dashboard-card active" data-section="nominations">
+        <a href="#section-nominations" class="text-decoration-none dashboard-card active" data-section="nominations">
           <div class="card h-100 shadow-sm text-center">
             <div class="card-body">
               <i class="bi bi-award fs-1 text-primary"></i>
@@ -110,7 +119,7 @@
         </a>
       </div>
       <div class="col-md-3">
-        <a href="#" class="text-decoration-none dashboard-card" data-section="contact">
+        <a href="#section-contact" class="text-decoration-none dashboard-card" data-section="contact">
           <div class="card h-100 shadow-sm text-center">
             <div class="card-body">
               <i class="bi bi-envelope fs-1 text-success"></i>
@@ -121,7 +130,7 @@
         </a>
       </div>
       <div class="col-md-3">
-        <a href="#" class="text-decoration-none dashboard-card" data-section="newsletter">
+        <a href="#section-newsletter" class="text-decoration-none dashboard-card" data-section="newsletter">
           <div class="card h-100 shadow-sm text-center">
             <div class="card-body">
               <i class="bi bi-newspaper fs-1 text-warning"></i>
@@ -132,7 +141,7 @@
         </a>
       </div>
       <div class="col-md-3">
-        <a href="#" class="text-decoration-none dashboard-card" data-section="volunteers">
+        <a href="#section-volunteers" class="text-decoration-none dashboard-card" data-section="volunteers">
           <div class="card h-100 shadow-sm text-center">
             <div class="card-body">
               <i class="bi bi-people fs-1 text-danger"></i>
@@ -148,35 +157,39 @@
   <!-- Data Sections -->
   <div class="container mt-5">
     <!-- Nominations Section -->
-    <div class="dashboard-section" id="section-nominations">
+    <div class="dashboard-section d-none" id="section-nominations">
       <h4 class="py-3">Nominations</h4>
       <?php if (!empty($nominations_data)): ?>
       <div class="table-responsive">
       <table class="table table-striped table-hover">
-        <thead>
-          <tr>
-            <th class="d-none d-md-table-cell">Nominator</th>
-            <th>Nominee</th>
-            <th>Award</th>
-            <th>Details</th>
-          </tr>
-        </thead>
-        <tbody>
-          <?php foreach($nominations_data as $row): ?>
-          <tr>
-            <td class="d-none d-md-table-cell"><?php echo htmlspecialchars($row['nominator_name']); ?></td>
-            <td><?php echo htmlspecialchars($row['nominee_name']); ?></td>
-            <td><?php echo htmlspecialchars($row['award_category']); ?></td>
-            <td>
-              <a href="nomination_details.php?id=<?php echo urlencode($row['id']); ?>" class="btn btn-sm btn-outline-primary">Details</a>
-            </td>
-          </tr>
-          <?php endforeach; ?>
-        </tbody>
+      <thead>
+        <tr>
+        <th class="d-none d-md-table-cell">Nominator</th>
+        <th>Nominee</th>
+        <th>Award</th>
+        <th>Details</th>
+        </tr>
+      </thead>
+      <tbody>
+        <?php
+        // Show only the last 5 nominations
+        $last_five_nominations = array_slice($nominations_data, -5, 5, true);
+        foreach($last_five_nominations as $row):
+        ?>
+        <tr>
+        <td class="d-none d-md-table-cell"><?php echo htmlspecialchars($row['nominator_name']); ?></td>
+        <td><?php echo htmlspecialchars($row['nominee_name']); ?></td>
+        <td><?php echo htmlspecialchars($row['award_category']); ?></td>
+        <td>
+          <a href="nomination_details.php?id=<?php echo urlencode($row['id']); ?>" class="btn btn-sm btn-outline-primary">Details</a>
+        </td>
+        </tr>
+        <?php endforeach; ?>
+      </tbody>
       </table>
       </div>
       <div class="text-center mt-4">
-        <a href="nominations.php" class="btn btn-primary btn-lg px-5">View All Nominations</a>
+      <a href="nominations_all.php" class="btn btn-primary btn-lg px-5">View All Nominations</a>
       </div>
       <?php else: ?>
       <p>No nominations found.</p>
@@ -334,31 +347,6 @@
       sections.forEach(sec => {
         if (sec.id !== 'section-nominations') sec.classList.add('d-none');
         else sec.classList.remove('d-none');
-      });
-    });
-  </script>
-
-  <script>
-    // Card click to switch tab
-    document.addEventListener('DOMContentLoaded', function() {
-      const cardLinks = [
-        { selector: 'a[href="nominations.php"]', tab: 'nominations-tab' },
-        { selector: 'a[href="contact_us.php"]', tab: 'contact-tab' },
-        { selector: 'a[href="newsletter.php"]', tab: 'newsletter-tab' },
-        { selector: 'a[href="volunteers.php"]', tab: 'volunteers-tab' }
-      ];
-      cardLinks.forEach(link => {
-        const el = document.querySelector(link.selector);
-        if (el) {
-          el.addEventListener('click', function(e) {
-            e.preventDefault();
-            const tabTrigger = document.getElementById(link.tab);
-            if (tabTrigger) {
-              new bootstrap.Tab(tabTrigger).show();
-              window.scrollTo({ top: document.querySelector('.nav-tabs').offsetTop - 60, behavior: 'smooth' });
-            }
-          });
-        }
       });
     });
   </script>
