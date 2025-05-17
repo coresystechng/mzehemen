@@ -80,7 +80,7 @@ $conn->close();
     </div>
   </nav>
   <div class="container py-5">
-      <a href="dashboard.php" class="btn btn-secondary mb-4"><i class="bi bi-arrow-left"></i> Back to Dashboard</a>
+      <a href="nominations_all.php" class="btn btn-secondary mb-4"><i class="bi bi-arrow-left"></i> Back to Nominations</a>
       <div class="card shadow">
           <div class="card-header bg-primary text-white">
         <h4 class="mb-0">Nomination Details</h4>

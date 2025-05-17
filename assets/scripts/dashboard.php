@@ -228,7 +228,7 @@
       </table>
       </div>
       <div class="text-center mt-4">
-      <a href="contact_us.php" class="btn btn-primary btn-lg px-5">View All Contacts</a>
+      <a href="contacts_all.php" class="btn btn-primary btn-lg px-5">View All Contacts</a>
       </div>
       <?php else: ?>
       <p>No contact messages found.</p>
