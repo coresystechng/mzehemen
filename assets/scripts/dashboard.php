@@ -275,8 +275,8 @@
       <table class="table table-striped table-hover">
       <thead>
         <tr>
-        <th>First Name</th>
-        <th>Last Name</th>
+        <th>Full Name</th>
+        <th>Email</th>
         <th>Availability</th>
         <th>Details</th>
         </tr>
@@ -288,8 +288,8 @@
         foreach($last_five_volunteers as $row):
         ?>
         <tr>
-        <td><?php echo htmlspecialchars($row['first_name']); ?></td>
-        <td><?php echo htmlspecialchars($row['last_name']); ?></td>
+        <td><?php echo htmlspecialchars($row['first_name']) . ' '. htmlspecialchars($row['last_name']); ?></td>
+        <td><?php echo htmlspecialchars($row['email']); ?></td>
         <td><?php echo htmlspecialchars($row['availability']); ?></td>
         <td>
         <a href="volunteer_details.php?id=<?php echo urlencode($row['id']); ?>" class="btn btn-sm btn-outline-primary">Details</a>
@@ -300,7 +300,7 @@
       </table>
       </div>
       <div class="text-center mt-4">
-      <a href="volunteers.php" class="btn btn-primary btn-lg px-5">View All Volunteers</a>
+      <a href="volunteers_all.php" class="btn btn-primary btn-lg px-5">View All Volunteers</a>
       </div>
       <?php else: ?>
       <p>No volunteers found.</p>
