@@ -261,7 +261,7 @@
       </table>
       </div>
       <div class="text-center mt-4">
-      <a href="newsletter.php" class="btn btn-primary btn-lg px-5">View All Subscribers</a>
+      <a href="newsletter_all.php" class="btn btn-primary btn-lg px-5">View All Subscribers</a>
       </div>
       <?php else: ?>
       <p>No newsletter subscribers found.</p>
