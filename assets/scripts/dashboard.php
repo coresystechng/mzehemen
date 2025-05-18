@@ -165,7 +165,7 @@
       <thead>
         <tr>
         <th class="d-none d-md-table-cell">Nominator</th>
-        <th>Nominee</th>
+        <th class="d-none d-md-table-cell">Nominee</th>
         <th>Award</th>
         <th>Details</th>
         </tr>
@@ -178,7 +178,7 @@
         ?>
         <tr>
         <td class="d-none d-md-table-cell"><?php echo htmlspecialchars($row['nominator_name']); ?></td>
-        <td><?php echo htmlspecialchars($row['nominee_name']); ?></td>
+        <td class="d-none d-md-table-cell"><?php echo htmlspecialchars($row['nominee_name']); ?></td>
         <td><?php echo htmlspecialchars($row['award_category']); ?></td>
         <td>
           <a href="nomination_details.php?id=<?php echo urlencode($row['id']); ?>" class="btn btn-sm btn-outline-primary">Details</a>
@@ -203,9 +203,8 @@
       <table class="table table-striped table-hover">
         <thead>
           <tr>
-            <th>ID</th>
-            <th>Email</th>
-            <th class="d-none d-md-table-cell">Subject</th>
+            <th class="d-none d-md-table-cell">Name</th>
+            <th>Subject</th>
             <th>Details</th>
           </tr>
         </thead>
@@ -216,9 +215,8 @@
         foreach($last_five_contacts as $row):
         ?>
         <tr>
-        <td ><?php echo htmlspecialchars($row['id']); ?></td>
-        <td><?php echo htmlspecialchars($row['email']); ?></td>
-        <td class="d-none d-md-table-cell"><?php echo htmlspecialchars($row['subject']); ?></td>
+        <td class="d-none d-md-table-cell"><?php echo htmlspecialchars($row['full_name']); ?></td>
+        <td><?php echo htmlspecialchars($row['subject']); ?></td>
         <td>
           <a href="contact_details.php?id=<?php echo urlencode($row['id']); ?>" class="btn btn-sm btn-outline-primary">Details</a>
         </td>
@@ -276,8 +274,8 @@
       <thead>
         <tr>
         <th>Full Name</th>
-        <th>Email</th>
-        <th>Availability</th>
+        <th class="d-none d-md-table-cell">Email</th>
+        <th class="d-none d-md-table-cell">Availability</th>
         <th>Details</th>
         </tr>
       </thead>
@@ -289,8 +287,8 @@
         ?>
         <tr>
         <td><?php echo htmlspecialchars($row['first_name']) . ' '. htmlspecialchars($row['last_name']); ?></td>
-        <td><?php echo htmlspecialchars($row['email']); ?></td>
-        <td><?php echo htmlspecialchars($row['availability']); ?></td>
+        <td class="d-none d-md-table-cell"><?php echo htmlspecialchars($row['email']); ?></td>
+        <td class="d-none d-md-table-cell"><?php echo htmlspecialchars($row['availability']); ?></td>
         <td>
         <a href="volunteer_details.php?id=<?php echo urlencode($row['id']); ?>" class="btn btn-sm btn-outline-primary">Details</a>
         </td>

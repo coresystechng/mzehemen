@@ -44,6 +44,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.1/font/bootstrap-icons.min.css">
@@ -72,69 +73,69 @@
     </div>
   </nav>
   <div class="container">
-      <a href="dashboard.php" class="btn btn-secondary mb-4"><i class="bi bi-arrow-left"></i> Back to Dashboard</a>
-      <h2 class="mb-4">All Volunteers</h2>
-      <?php if (!empty($volunteers)): ?>
-      <div class="table-responsive">
-          <table class="table table-striped">
-              <thead>
-                  <tr>
-                      <th>Full Name</th>
-                      <th>Email</th>
-                      <th>Phone</th>
-                      <th>Availability</th>
-                      <th>Details</th>
-                  </tr>
-              </thead>
-              <tbody>
-              <?php foreach ($volunteers as $row): ?>
-                  <tr>
-                      <td><?php echo htmlspecialchars($row['first_name']) . ' ' . htmlspecialchars($row['last_name']); ?></td>
-                      <td><?php echo htmlspecialchars($row['email']); ?></td>
-                      <td><?php echo htmlspecialchars($row['phone_no']); ?></td>
-                      <td><?php echo htmlspecialchars($row['availability'] ?? ''); ?></td>
-                      <td>
-                          <a href="volunteer_details.php?id=<?php echo urlencode($row['id']); ?>" class="btn btn-sm btn-outline-primary">Details</a>
-                      </td>
-                  </tr>
-              <?php endforeach; ?>
-              </tbody>
-          </table>
-      </div>
-      <!-- Pagination -->
-      <nav aria-label="Page navigation">
-          <ul class="pagination justify-content-center">
-              <?php if ($page > 1): ?>
-                  <li class="page-item">
-                      <a class="page-link" href="?page=<?php echo $page-1; ?>" aria-label="Previous">
-                          <span aria-hidden="true">&laquo; Prev</span>
-                      </a>
-                  </li>
-              <?php endif; ?>
-              <?php
-              $start = max(1, $page - 2);
-              $end = min($total_pages, $page + 2);
-              for ($i = $start; $i <= $end; $i++): ?>
-                  <li class="page-item<?php if ($i == $page) echo ' active'; ?>">
-                      <a class="page-link" href="?page=<?php echo $i; ?>"><?php echo $i; ?></a>
-                  </li>
-              <?php endfor; ?>
-              <?php if ($page < $total_pages): ?>
-                  <li class="page-item">
-                      <a class="page-link" href="?page=<?php echo $page+1; ?>" aria-label="Next">
-                          <span aria-hidden="true">Next &raquo;</span>
-                      </a>
-                  </li>
-              <?php endif; ?>
-          </ul>
-      </nav>
-      <?php else: ?>
-          <p>No volunteers found.</p>
-      <?php endif; ?>
+    <a href="dashboard.php" class="btn btn-secondary mb-4"><i class="bi bi-arrow-left"></i> Back to Dashboard</a>
+    <h2 class="mb-4">All Volunteers</h2>
+    <?php if (!empty($volunteers)): ?>
+    <div class="table-responsive">
+      <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Full Name</th>
+                <th class="d-none d-md-table-cell">Email</th>
+                <th class="d-none d-md-table-cell">Phone</th>
+                <th>Availability</th>
+                <th>Details</th>
+            </tr>
+        </thead>
+        <tbody>
+          <?php foreach ($volunteers as $row): ?>
+              <tr>
+                  <td><?php echo htmlspecialchars($row['first_name']) . ' ' . htmlspecialchars($row['last_name']); ?></td>
+                  <td class="d-none d-md-table-cell"><?php echo htmlspecialchars($row['email']); ?></td>
+                  <td class="d-none d-md-table-cell"><?php echo htmlspecialchars($row['phone_no']); ?></td>
+                  <td><?php echo htmlspecialchars($row['availability'] ?? ''); ?></td>
+                  <td>
+                      <a href="volunteer_details.php?id=<?php echo urlencode($row['id']); ?>" class="btn btn-sm btn-outline-primary">Details</a>
+                  </td>
+              </tr>
+          <?php endforeach; ?>
+        </tbody>
+      </table>
+    </div>
+    <!-- Pagination -->
+    <nav aria-label="Page navigation">
+        <ul class="pagination justify-content-center">
+            <?php if ($page > 1): ?>
+                <li class="page-item">
+                    <a class="page-link" href="?page=<?php echo $page-1; ?>" aria-label="Previous">
+                        <span aria-hidden="true">&laquo; Prev</span>
+                    </a>
+                </li>
+            <?php endif; ?>
+            <?php
+            $start = max(1, $page - 2);
+            $end = min($total_pages, $page + 2);
+            for ($i = $start; $i <= $end; $i++): ?>
+                <li class="page-item<?php if ($i == $page) echo ' active'; ?>">
+                    <a class="page-link" href="?page=<?php echo $i; ?>"><?php echo $i; ?></a>
+                </li>
+            <?php endfor; ?>
+            <?php if ($page < $total_pages): ?>
+                <li class="page-item">
+                    <a class="page-link" href="?page=<?php echo $page+1; ?>" aria-label="Next">
+                        <span aria-hidden="true">Next &raquo;</span>
+                    </a>
+                </li>
+            <?php endif; ?>
+        </ul>
+    </nav>
+    <?php else: ?>
+        <p>No volunteers found.</p>
+    <?php endif; ?>
   </div>
   <div class="container text-center py-5">
     <p class="mb-0 text-muted small"> &COPY; 2025 Mzehemen U Tiv. All rights reserved.</p>
   </div>
-<script src="../js/bootstrap.bundle.js"></script>
+  <script src="../js/bootstrap.bundle.js"></script>
 </body>
 </html>

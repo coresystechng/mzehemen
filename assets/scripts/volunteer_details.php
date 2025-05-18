@@ -45,6 +45,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Volunteer Details - Mzehemen U Tiv</title>
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/styles.css">
@@ -119,7 +120,7 @@
                     <td><?php echo htmlspecialchars($volunteer['skills'] ?? ''); ?></td>
                   </tr>
                   <tr>
-                    <th scope="row">Date Joined</th>
+                    <th scope="row">Date Applied</th>
                     <td>
                       <?php
                         if (!empty($volunteer['date_submitted'])) {

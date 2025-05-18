@@ -45,6 +45,7 @@ $conn->close();
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.1/font/bootstrap-icons.min.css">
@@ -85,20 +86,20 @@ $conn->close();
           <table class="table table-striped">
               <thead>
                   <tr>
-                      <th>Nominator</th>
+                      <th class="d-none d-md-table-cell">Nominator</th>
                       <th>Nominee</th>
                       <th>Award</th>
-                      <th>Date</th>
+                      <th class="d-none d-md-table-cell">Date</th>
                       <th>Details</th>
                   </tr>
               </thead>
               <tbody>
               <?php foreach ($nominations as $row): ?>
                   <tr>
-                      <td><?php echo htmlspecialchars($row['nominator_name']); ?></td>
+                      <td class="d-none d-md-table-cell"><?php echo htmlspecialchars($row['nominator_name']); ?></td>
                       <td><?php echo htmlspecialchars($row['nominee_name']); ?></td>
                       <td><?php echo htmlspecialchars($row['award_category']); ?></td>
-                      <td><?php echo htmlspecialchars($row['created_at'] ?? ''); ?></td>
+                      <td class="d-none d-md-table-cell"><?php echo htmlspecialchars($row['created_at'] ?? ''); ?></td>
                       <td>
                           <a href="nomination_details.php?id=<?php echo urlencode($row['id']); ?>" class="btn btn-sm btn-outline-primary">Details</a>
                       </td>

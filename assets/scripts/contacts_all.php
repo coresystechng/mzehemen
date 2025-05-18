@@ -44,6 +44,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.1/font/bootstrap-icons.min.css">
@@ -79,9 +80,8 @@
           <table class="table table-striped">
               <thead>
                   <tr>
-                      <th>ID</th>
-                      <th>Full Name</th>
-                      <th>Email</th>
+                      <th class="d-none d-md-table-cell">Full Name</th>
+                      <th class="d-none d-md-table-cell">Email</th>
                       <th>Subject</th>
                       <th>Details</th>
                   </tr>
@@ -89,9 +89,8 @@
               <tbody>
               <?php foreach ($contacts as $row): ?>
                   <tr>
-                      <td><?php echo htmlspecialchars($row['id']); ?></td>
-                      <td><?php echo htmlspecialchars($row['full_name']); ?></td>
-                      <td><?php echo htmlspecialchars($row['email']); ?></td>
+                      <td class="d-none d-md-table-cell"><?php echo htmlspecialchars($row['full_name']); ?></td>
+                      <td class="d-none d-md-table-cell"><?php echo htmlspecialchars($row['email']); ?></td>
                       <td><?php echo htmlspecialchars($row['subject']); ?></td>
                       <td>
                           <a href="contact_details.php?id=<?php echo urlencode($row['id']); ?>" class="btn btn-sm btn-outline-primary">Details</a>

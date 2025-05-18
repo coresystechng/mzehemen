@@ -44,6 +44,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.1/font/bootstrap-icons.min.css">
@@ -77,25 +78,23 @@
       <?php if (!empty($subscribers)): ?>
       <div class="table-responsive">
           <table class="table table-striped">
-              <thead>
-                  <tr>
-                      <th>ID</th>
-                      <th>Email</th>
-                      <th>Subscribed At</th>
-                  </tr>
-              </thead>
+            <thead>
+              <tr>
+                <th>Email</th>
+                <th>Date</th>
+              </tr>
+            </thead>
               <tbody>
               <?php foreach ($subscribers as $row): ?>
-                  <tr>
-                      <td><?php echo htmlspecialchars($row['id']); ?></td>
-                      <td><?php echo htmlspecialchars($row['email']); ?></td>
-                        <td>
-                        <?php
-                          $date = DateTime::createFromFormat('Y-m-d H:i:s', $row['date_of_subscription']);
-                          echo $date ? $date->format('M j, Y') : htmlspecialchars($row['date_of_subscription']);
-                        ?>
-                        </td>
-                  </tr>
+                <tr>
+                  <td><?php echo htmlspecialchars($row['email']); ?></td>
+                    <td>
+                    <?php
+                      $date = DateTime::createFromFormat('Y-m-d H:i:s', $row['date_of_subscription']);
+                      echo $date ? $date->format('M j, Y') : htmlspecialchars($row['date_of_subscription']);
+                    ?>
+                    </td>
+                </tr>
               <?php endforeach; ?>
               </tbody>
           </table>
